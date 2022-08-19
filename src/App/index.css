@@ -6,9 +6,8 @@ html{
     box-sizing: inherit;
 }
  
-
  .container_home{
-    background-image: url("/background-home-desktop.jpg");
+    background-image: url("images/background-home-desktop.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
