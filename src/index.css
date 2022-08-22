@@ -1,6 +1,5 @@
 html{
     box-sizing: border-box;
-    height: 100%;
 }
 *, ::after, ::before{
     box-sizing: inherit;
@@ -11,8 +10,4 @@ html{
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 835px;
 }
