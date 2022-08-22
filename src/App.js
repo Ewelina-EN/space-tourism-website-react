@@ -6,7 +6,6 @@ function App() {
   return (
     <main className="container_home">
       <Navbar />
-      {/* <Navigation /> */}
       <article className="home">
         <section className="home_text">
           <p className="home_want">SO, YOU WANT TO TRAVEL TO</p>
