@@ -1,3 +1,10 @@
+ .container_home{
+    background-image: url("./images/background-home-desktop.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .nav{
     color: #FFFFFF;
     display: flex;
@@ -48,10 +55,19 @@
     margin: 0 10px;
     text-decoration:none;
     display: inline-block;
-    padding:30px  0 28px 0;
+    padding:30px 0 28px 0;
     border-bottom: 3px transparent solid;
 }
 
-.nav_links:hover{
-    border-color:  #8A8B90;
+.nav_menu li{
+     border-bottom: 3px transparent solid;
 }
+
+.nav_menu li.active{
+    border-color: #FFFFFF;
+}
+
+.nav_menu li:hover{
+    border-bottom: 3px #8A8B90 solid;
+}
+

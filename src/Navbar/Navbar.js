@@ -1,41 +1,25 @@
-import React, { Component } from 'react';
 import logo from './logo.svg';
-import { MenuItems } from './MenuItems';
 import './Navbar.css'
+import Article from "./Article/Article"
 
-class Navbar extends Component {
-  state = { clicked: false }
-
-  // handleClick = () => {
-  //   this.setState({ clicked: !this.state.clicked })
-  // }
-  // back to this for mobile: https://www.youtube.com/watch?v=fL8cFqhTHwA&ab_channel=BrianDesign
-
-  render() {
-    return (
+export default function Navbar() {
+  return (
+    <main className="container_home">
       <div className="nav">
         <div className="nav_logo">
           <img src={logo} alt="" />
         </div>
         <nav className="nav_menu">
-          {/* <div className="menu-icon" onClick={this.handleClick}>
-            <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-          </div> */}
           <ul>
-            {MenuItems.map((item, index) => {
-              return (
-                <li key={index}>
-                  <a className={item.cName} href={item.url}>
-                    <strong>{item.number} </strong>{item.title}
-                  </a>
-                </li>
-              )
-            })}
+            <li className="active"><a href="/home" ><strong>00</strong> HOME</a></li>
+            <li><a href="/destination"><strong>01</strong> DESTINATION</a></li>
+            <li><a href="/crew"><strong>02</strong> CREW</a></li>
+            <li><a href="/technology"><strong>03</strong> TECHNOLOGY</a></li>
           </ul>
         </nav>
       </div>
-    )
-  }
+      <Article />
+    </main>
+  )
 }
 
-export default Navbar
