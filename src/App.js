@@ -1,6 +1,7 @@
 import Home from './Home/Home';
 import Destination from './Destination/Destination'
 import Crew from './Crew/Crew'
+import Technology from "./Technology/Technology"
 
 function App() {
   console.log(window.location)
@@ -18,9 +19,9 @@ function App() {
     case "/crew":
       component = <Crew />
       break
-    // case "/technology":
-    //   Component = Technology
-    //   break
+    case "/technology":
+      component = <Technology />
+      break
   }
   return (
     <>
