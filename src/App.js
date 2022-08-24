@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
-// import Button from "./Button/Button";
-import Navbar from './Navbar/Navbar'
-// import Article from './Article/Article';
+import Home from './Home/Home';
 import Destination from './Destination/Destination'
 import Crew from './Crew/Crew'
 
 function App() {
+  console.log(window.location)
   let component
   switch (window.location.pathname) {
-    case "/":
-      component = <App />
+    case "/space-tourism-website-react":
+      component = <Home />
+      break
+    case "/home":
+      component = <Home />
       break
     case "/destination":
       component = <Destination />
@@ -23,8 +24,7 @@ function App() {
   }
   return (
     <>
-      <Navbar />
-      { component}
+      <div>{component}</div>
     </>
   );
 }
