@@ -1,12 +1,5 @@
- .container_home{
-    background-image: url("./images/background-home-desktop.jpg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .nav{
-    color: #FFFFFF;
+    color:#FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content:space-between;

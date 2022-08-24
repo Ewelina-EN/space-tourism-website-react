@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './Navbar.css'
-import Article from "./Article/Article"
 
 export default function Navbar() {
+
   return (
-    <main className="container_home">
+    <>
       <div className="nav">
         <div className="nav_logo">
           <img src={logo} alt="" />
@@ -18,8 +18,8 @@ export default function Navbar() {
           </ul>
         </nav>
       </div>
-      <Article />
-    </main>
+
+    </>
   )
 }
 
