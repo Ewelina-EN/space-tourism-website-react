@@ -1,7 +1,7 @@
-import Home from './src/Home/Home';
-import Destination from './src/Destination/Destination'
-import Crew from './src/Crew/Crew'
-import Technology from "./src/Technology/Technology"
+import Home from './Home/Home';
+import Destination from './Destination/Destination'
+import Crew from './Crew/Crew'
+import Technology from "./Technology/Technology"
 
 function App() {
   console.log(window.location)
