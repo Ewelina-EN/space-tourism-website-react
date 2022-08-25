@@ -7,7 +7,7 @@ function App() {
   console.log(window.location)
   let component
   switch (window.location.pathname) {
-    case "/space-tourism-website-react":
+    case "/space-tourism-website-react/":
       component = <Home />
       break
     case "/home":
