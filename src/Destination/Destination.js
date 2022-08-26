@@ -31,7 +31,7 @@ function Content() {
             <nav className="destination_menu">
                 <ul>
                     <li><a href="destination-moon.html" className="active">Moon</a></li>
-                    <li><a href="./destination/Mars.js"></a></li>
+                    <li><a href="./destination/Mars.js"></a>Mars</li>
                     <li><a href="destination-europa.html">Europa</a></li>
                     <li><a href="destination-titan.html">Titan</a></li>
 
