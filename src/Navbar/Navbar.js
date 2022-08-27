@@ -12,9 +12,9 @@ export default function Navbar() {
         </div>
         <nav className="nav_menu">
           <ul>
-            <CustomLink className="active" to="/home" ><strong>00</strong> HOME</CustomLink>
+            <CustomLink className="active" to="/" ><strong>00</strong> HOME</CustomLink>
             <CustomLink to="/destination" ><strong>02</strong> DESTINATION</CustomLink>
-            <CustomLink to="/crew" ><strong>03</strong> CREW</CustomLink>
+            <CustomLink to="/crew"><strong>03</strong> CREW</CustomLink>
             <CustomLink to="/technology" ><strong>04</strong> TECHNOLOGY</CustomLink>
           </ul>
         </nav>
@@ -24,8 +24,14 @@ export default function Navbar() {
 }
 
 function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to)
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  // console.log("to", to);
+  // console.log("children", to, children);
+  // console.log("props", to, props);
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+  // console.log("resolvedPath", to, resolvedPath);
+  console.log("isActive", to, isActive);
 
   return (
     <li className={isActive ? "active" : ""}>
