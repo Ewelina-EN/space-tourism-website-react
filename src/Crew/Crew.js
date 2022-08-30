@@ -1,6 +1,7 @@
 import './crew.css';
 import Navbar from "../navbar/navbar"
 import commander from "./images/image-douglas-hurley.png"
+import CrewNav from './crewNav';
 
 export default function Crew() {
     return (
@@ -18,14 +19,7 @@ export default function Crew() {
                         and former NASA astronaut. He launched into space for the third time as
             commander of Crew Dragon Demo-2.</p>
                     </section>
-                    <nav className="crew_menu">
-                        <ul>
-                            <li><a href="./crew-commander.html" className="active"><span></span></a></li>
-                            <li><a href="/crew/crew-specialist.html"><span></span></a></li>
-                            <li><a href="/crew/crew-pilot.html"><span></span></a></li>
-                            <li><a href="/crew/crew-engineer.html"><span></span></a></li>
-                        </ul>
-                    </nav>
+                    <CrewNav />
                 </div>
                 <img src={commander} alt="" className="crew_img" />
             </article>

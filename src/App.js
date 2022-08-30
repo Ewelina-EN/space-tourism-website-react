@@ -6,6 +6,9 @@ import { Route, Routes } from "react-router-dom"
 import Europe from './destination/pages/europe';
 import Mars from './destination/pages/mars';
 import Titan from './destination/pages/titan';
+import Specialist from "./crew/pages/specialist";
+import Pilot from "./crew/pages/pilot";
+import Engineer from "./crew/pages/engineer";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Route path="/destination/europe" element={<Europe />} />
         <Route path="/destination/titan" element={<Titan />} />
         <Route path="/crew" element={<Crew />} />
+        <Route path="/crew/specialist" element={<Specialist />} />
+        <Route path="/crew/pilot" element={<Pilot />} />
+        <Route path="/crew/engineer" element={<Engineer />} />
         <Route path="/technology" element={<Technology />} />
       </Routes>
     </>

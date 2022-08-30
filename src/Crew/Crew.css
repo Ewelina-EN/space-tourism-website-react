@@ -3,7 +3,6 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
 }
 
 .crew_header{
@@ -15,25 +14,26 @@
     top: calc(25% - 34px/2);
     font-size: 28px;
     letter-spacing: 4.725px;
-    padding-left: 35px;
 }
 
 .crew_header span{
-    left: 0%;
-    right: 93.19%;
+    padding-right: 10px;
     font-weight: 700;
     mix-blend-mode: normal;
     opacity: 0.25;
 }
 
 .crew_content{
-     display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 160px 0 0 0;
+    width: 900px;
+    margin: 0;
 }
 
 .crew_section{
-    margin: 150px 100px 0 100px;
+    margin: 50px 80px 0 0;
 }
 
 .crew_role{
@@ -43,7 +43,6 @@
     text-transform: uppercase;
     color: #FFFFFF;
     opacity: 0.5;
-    margin: 90px 0 0 0;
 }
 
 .crew_name{
@@ -97,6 +96,6 @@
 .crew_img{
     display: inline-block;
     height: 600px;
-    margin-right: 100px;
-    margin-top: 111px;
+    /* margin-right: 100px;
+    margin-top: 111px; */
 }
