@@ -29,7 +29,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 160px 0 50px 0;
+    padding: 160px 0 70px 0;
 }
 
 .destination_menu{
@@ -62,12 +62,17 @@
     padding: 10px 0;
 }
 
-.destination_menu a:hover{
-    border-color:  #8A8B90;
+.destination_menu li{
+    padding-bottom: 13px;
+    border-bottom: 3px transparent solid;
 }
 
-.destination_menu a.active{
+.destination_menu li.active{
     border-color: #FFFFFF;
+}
+
+.destination_menu li.hover{
+    border-color:  #8A8B90;
 }
 
 .destination_planet{
@@ -80,7 +85,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 100px;
-    margin: 40px 0;
+    margin: 20px 0 20px 0 ;
 }
 
 .destination_info{

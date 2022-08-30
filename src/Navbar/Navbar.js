@@ -1,6 +1,6 @@
 import logo from './logo.svg';
-import './navbar.css'
-import CustomLink from "../utils"
+import './navbar.css';
+import CustomLink from "../utils";
 
 export default function Navbar() {
 

@@ -1,7 +1,7 @@
 import moon from "./images/image-moon.png";
 import './destination.css';
 import Navbar from "../navbar/navbar";
-import CustomLink from "../utils";
+import Navigation from "./pages/navigation";
 
 export default function Destination() {
     return (
@@ -28,19 +28,7 @@ function Header() {
 function Content() {
     return (
         <div className="destination_content">
-            <nav className="destination_menu">
-                {/* <ul>
-                    <li><a href="destination-moon.html" className="active">Moon</a></li>
-                    <li><a href="./destination/Mars.js">Mars</a></li>
-                    <li><a href="destination-europa.html">Europa</a></li>
-                    <li><a href="destination-titan.html">Titan</a></li>
-
-                </ul> */}
-                <ul>
-                    <CustomLink to="europe" >Europe</CustomLink>
-                </ul>
-
-            </nav>
+            <Navigation />
             <section className="destination_planet">
                 <p className="destination_title">Moon</p>
                 <p className="destination_info">See our planet as you’ve never seen it before. A perfect relaxing trip away to

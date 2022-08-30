@@ -8,7 +8,7 @@ export default function CustomLink({ to, children, ...props }) {
     const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
     // console.log("resolvedPath", to, resolvedPath);
-    console.log("isActive", to, isActive);
+    // console.log("isActive", to, isActive);
 
     return (
         <li className={isActive ? "active" : ""}>
