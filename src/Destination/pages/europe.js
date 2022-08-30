@@ -10,7 +10,7 @@ export default function Europe() {
             <Navbar />
             <Header />
             <article className="destination_section">
-                <img src={europe} alt="picture of the europe" />
+                <img src={europe} alt="europe" />
                 <Content />
             </article>
         </main >

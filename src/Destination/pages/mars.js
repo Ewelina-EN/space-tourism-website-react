@@ -10,7 +10,7 @@ export default function Mars() {
             <Navbar />
             <Header />
             <article className="destination_section">
-                <img src={mars} alt="picture of the europe" />
+                <img src={mars} alt="mars" />
                 <Content />
             </article>
         </main >

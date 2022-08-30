@@ -10,7 +10,7 @@ export default function Destination() {
             <Navbar />
             <Header />
             <article className="destination_section">
-                <img src={moon} alt="picture of the moon" />
+                <img src={moon} alt="moon" />
                 <Content />
             </article>
         </main >

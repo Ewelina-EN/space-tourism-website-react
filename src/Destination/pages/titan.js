@@ -10,7 +10,7 @@ export default function Titan() {
             <Navbar />
             <Header />
             <article className="destination_section">
-                <img src={titan} alt="picture of the titan" />
+                <img src={titan} alt="titan" />
                 <Content />
             </article>
         </main >
