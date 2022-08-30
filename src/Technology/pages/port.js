@@ -1,9 +1,9 @@
-import Navbar from '../navbar/navbar';
-import './technology.css';
-import vehicle from "./images/image-launch-vehicle-portrait.jpg";
-import TechNav from './techNav';
+import Navbar from '../../navbar/navbar';
+import '../technology.css';
+import port from "../images/image-spaceport-portrait.jpg";
+import TechNav from '../techNav';
 
-export default function Technology() {
+export default function Port() {
     return (
         <main class="tech_container">
             <Navbar />
@@ -24,7 +24,7 @@ export default function Technology() {
             it's quite an awe-inspiring sight on the launch pad!</p>
                     </section>
                 </div>
-                <section><img src={vehicle} alt="vehicle image" /></section>
+                <section><img src={port} alt="port" /></section>
             </article>
         </main>
 
