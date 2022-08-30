@@ -1,5 +1,5 @@
-import './Crew.css'
-import Navbar from "../Navbar/Navbar"
+import './crew.css';
+import Navbar from "../navbar/navbar"
 import commander from "./images/image-douglas-hurley.png"
 
 export default function Crew() {

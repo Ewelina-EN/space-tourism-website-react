@@ -1,7 +1,6 @@
-import Navbar from '../Navbar/Navbar'
-import './Technology.css'
+import Navbar from '../navbar/navbar'
+import './technology.css'
 import vehicle from "./images/image-launch-vehicle-portrait.jpg"
-
 
 export default function Technology() {
     return (
@@ -30,7 +29,7 @@ export default function Technology() {
             it's quite an awe-inspiring sight on the launch pad!</p>
                     </section>
                 </div>
-                <section><img src={vehicle} /></section>
+                <section><img src={vehicle} alt="vehicle image" /></section>
             </article>
         </main>
 

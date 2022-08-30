@@ -1,7 +1,6 @@
-import './Home.css'
-import Article from './Article/Article'
-import Navbar from '../Navbar/Navbar'
-
+import './home.css'
+import Article from './article/article.js'
+import Navbar from '../navbar/navbar.js'
 
 export default function Home() {
     return (

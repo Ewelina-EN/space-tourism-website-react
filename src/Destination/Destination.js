@@ -1,7 +1,7 @@
-import moon from "./images/image-moon.png"
-import './Destination.css';
-import Navbar from "../Navbar/Navbar";
-
+import moon from "./images/image-moon.png";
+import './destination.css';
+import Navbar from "../navbar/navbar";
+import CustomLink from "../utils";
 
 export default function Destination() {
     return (
@@ -15,7 +15,7 @@ export default function Destination() {
             </article>
         </main >
     )
-}
+};
 
 function Header() {
     return (
@@ -23,19 +23,23 @@ function Header() {
             <span>01</span>Pick your destination
         </div>
     )
-}
+};
 
 function Content() {
     return (
         <div className="destination_content">
             <nav className="destination_menu">
-                <ul>
+                {/* <ul>
                     <li><a href="destination-moon.html" className="active">Moon</a></li>
-                    <li><a href="./destination/Mars.js"></a>Mars</li>
+                    <li><a href="./destination/Mars.js">Mars</a></li>
                     <li><a href="destination-europa.html">Europa</a></li>
                     <li><a href="destination-titan.html">Titan</a></li>
 
+                </ul> */}
+                <ul>
+                    <CustomLink to="europe" >Europe</CustomLink>
                 </ul>
+
             </nav>
             <section className="destination_planet">
                 <p className="destination_title">Moon</p>
@@ -56,4 +60,4 @@ function Content() {
             </section>
         </div>
     )
-}
+};
