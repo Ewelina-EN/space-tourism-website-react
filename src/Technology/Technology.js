@@ -24,7 +24,7 @@ export default function Technology() {
             it's quite an awe-inspiring sight on the launch pad!</p>
                     </section>
                 </div>
-                <section><img src={vehicle} alt="vehicle image" /></section>
+                <section><img src={vehicle} alt="vehicle" /></section>
             </article>
         </main>
 

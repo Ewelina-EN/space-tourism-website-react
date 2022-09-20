@@ -28,7 +28,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 160px 0 0 0;
-    width: 900px;
     margin: 0;
 }
 
@@ -73,6 +72,11 @@
     margin-top: 100px;
     padding: 0;
 }
+
+.crew_menu ul li{
+    padding-right: 25px;
+}
+
 .crew_menu a{
     display: inline-block;
     border-radius: 50%;
@@ -81,21 +85,15 @@
     height: 15px;
 }
 
-.crew_menu a:hover{
-    background-color: #ffffff7d;
-}
-
 .crew_menu a.active{
     background-color: #FFFFFF;
 }
 
-.crew_menu ul li{
-    padding-right: 25px;
+.crew_menu a:hover{
+    background-color: #ffffff7d;
 }
 
 .crew_img{
     display: inline-block;
     height: 600px;
-    /* margin-right: 100px;
-    margin-top: 111px; */
 }
