@@ -1,26 +1,25 @@
-import '../crew.css';
 import Navbar from "../../navbar/navbar"
 import engineer from "../images/image-anousheh-ansari.png"
 import CrewNav from './crewNav';
+import { ContainerCrew, Header, HeaderSpan, Content, SectionCrew, Role, Name, Info, Img } from '../styled';
+
 
 export default function Engineer() {
     return (
-        <main className="container_crew">
+        <ContainerCrew>
             <Navbar />
-            <div className="crew_header">
-                <span>02</span> Meet your crew
-            </div>
-            <article className="crew_content">
-                <div className="crew_section">
-                    <section>
-                        <p className="crew_role">Flight Engineer</p>
-                        <p className="crew_name">Anousheh Ansari</p>
-                        <p className="crew_info">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
-                    </section>
+            <Header>
+                <HeaderSpan>02</HeaderSpan> Meet your crew
+            </Header>
+            <Content>
+                <SectionCrew>
+                    <Role>Flight Engineer</Role>
+                    <Name>Anousheh Ansari</Name>
+                    <Info>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </Info>
                     <CrewNav />
-                </div>
-                <img src={engineer} alt="" className="engineer" />
-            </article>
-        </main>
+                </SectionCrew>
+                <Img src={engineer} alt="" className="engineer" />
+            </Content>
+        </ContainerCrew>
     )
 }

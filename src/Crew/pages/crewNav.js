@@ -1,16 +1,16 @@
 import CustomLink from '../../utils';
-import '../crew.css';
+import { Navigation, CrewNavigation, List, Link } from '../styled.js'
 
 
 export default function CrewNav() {
     return (
-        <nav className="crew_menu">
-            <ul>
-                <CustomLink className="active" to="/crew"><span></span></CustomLink>
-                <CustomLink to="/crew/specialist"><span></span></CustomLink>
-                <CustomLink to="/crew/pilot"><span></span></CustomLink>
-                <CustomLink to="/crew/engineer"><span></span></CustomLink>
-            </ul>
-        </nav>
+        <Navigation>
+            <CrewNavigation>
+                <List><CustomLink to="/crew"><Link active><span></span></Link></CustomLink></List>
+                <List><CustomLink to="/crew/specialist"><Link><span></span></Link></CustomLink></List>
+                <List><CustomLink to="/crew/pilot"><Link><span></span></Link></CustomLink></List>
+                <List><CustomLink to="/crew/engineer"><Link><span></span></Link></CustomLink></List>
+            </CrewNavigation>
+        </Navigation>
     )
 }

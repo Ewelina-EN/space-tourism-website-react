@@ -1,28 +1,26 @@
-import '../crew/crew.css';
 import Navbar from "../navbar/navbar"
 import commander from "./images/image-douglas-hurley.png"
 import CrewNav from '../crew/pages/crewNav';
+import { ContainerCrew, Header, HeaderSpan, Content, SectionCrew, Role, Name, Info, Img } from './styled';
 
 export default function Crew() {
     return (
-        <main className="container_crew">
+        <ContainerCrew>
             <Navbar />
-            <div className="crew_header">
-                <span>02</span> Meet your crew
-            </div>
-            <article className="crew_content">
-                <div className="crew_section">
-                    <section>
-                        <p className="crew_role">Commander</p>
-                        <p className="crew_name">Douglas Hurley</p>
-                        <p className="crew_info">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+            <Header>
+                <HeaderSpan>02</HeaderSpan> Meet your crew
+            </Header>
+            <Content>
+                <SectionCrew>
+                    <Role>Commander</Role>
+                    <Name>Douglas Hurley</Name>
+                    <Info>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
                         and former NASA astronaut. He launched into space for the third time as
-            commander of Crew Dragon Demo-2.</p>
-                    </section>
+                        commander of Crew Dragon Demo-2.</Info>
                     <CrewNav />
-                </div>
-                <img src={commander} alt="" className="crew_img" />
-            </article>
-        </main>
+                </SectionCrew>
+                <Img src={commander} alt="" />
+            </Content>
+        </ContainerCrew>
     )
 }

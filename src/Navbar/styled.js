@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Navigation = styled.div`
     color: #FFFFFF;
@@ -59,9 +59,9 @@ export const Link = styled.a`
 export const List = styled.li`
     border-bottom: 3px transparent solid;
 
-    ${(props) => props.active && css`
+    &:active{
         border-color: #FFFFFF
-    `};
+    };
 
     &:hover{
         border-bottom: 3px #8A8B90 solid;

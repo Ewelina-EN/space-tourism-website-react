@@ -1,26 +1,24 @@
-import '../crew.css';
 import Navbar from "../../navbar/navbar"
 import specialist from "../images/image-mark-shuttleworth.png"
 import CrewNav from './crewNav';
+import { ContainerCrew, Header, HeaderSpan, Content, SectionCrew, Role, Name, Info, Img } from '../styled';
 
 export default function Specialist() {
     return (
-        <main className="container_crew">
+        <ContainerCrew>
             <Navbar />
-            <div className="crew_header">
-                <span>02</span> Meet your crew
-            </div>
-            <article className="crew_content">
-                <div className="crew_section">
-                    <section>
-                        <p className="crew_role">Mission Specialist</p>
-                        <p className="crew_name">Mark Shuttleworth</p>
-                        <p className="crew_info">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
-                    </section>
+            <Header>
+                <HeaderSpan>02</HeaderSpan> Meet your crew
+            </Header>
+            <Content>
+                <SectionCrew>
+                    <Role>Mission Specialist</Role>
+                    <Name>Mark Shuttleworth</Name>
+                    <Info>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system.Shuttleworth became the first South African to travel to space as a space tourist.</Info>
                     <CrewNav />
-                </div>
-                <img src={specialist} alt="" className="specialist" />
-            </article>
-        </main>
+                </SectionCrew>
+                <Img src={specialist} alt="" className="specialist" />
+            </Content>
+        </ContainerCrew>
     )
 }
