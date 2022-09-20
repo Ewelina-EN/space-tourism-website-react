@@ -2,50 +2,50 @@ import moon from "./images/image-moon.png";
 import './destination.css';
 import Navbar from "../navbar/navbar";
 import Navigation from "./pages/navigation";
+import { DestinationContainer, Section, DestinationHeader, HeaderSpan, Planet, Title, Info, Data, DataInfo, DataP, DataSpan } from "./styled";
 
 export default function Destination() {
     return (
-
-        < main className="container_destination" >
+        <DestinationContainer>
             <Navbar />
             <Header />
-            <article className="destination_section">
+            <Section>
                 <img src={moon} alt="moon" />
                 <Content />
-            </article>
-        </main >
+            </Section>
+        </DestinationContainer>
     )
 };
 
 function Header() {
     return (
-        <div className="destination_header">
-            <span>01</span>Pick your destination
-        </div>
+        <DestinationHeader>
+            <HeaderSpan>01</HeaderSpan>Pick your destination
+        </DestinationHeader>
     )
 };
 
 function Content() {
     return (
-        <div className="destination_content">
+        <div>
             <Navigation />
-            <section className="destination_planet">
-                <p className="destination_title">Moon</p>
-                <p className="destination_info">See our planet as you’ve never seen it before. A perfect relaxing trip away to
-                help regain perspective and come back refreshed. While you’re there, take in some history by visiting the
-            Luna 2 and Apollo 11 landing sites.</p>
-            </section>
-            <section className="destination_data">
+            <Planet>
+                <Title>Moon</Title>
+                <Info>See our planet as you’ve never seen it before. A perfect relaxing trip away to
+                    help regain perspective and come back refreshed. While you’re there, take in some history by visiting the
+                    Luna 2 and Apollo 11 landing sites.</Info>
+            </Planet>
+            <Data>
                 <div className="line"></div>
-                <div className="destination_data_info">
-                    <p className="">Avg. distance</p>
-                    <span>384,400 km</span>
-                </div>
-                <div className="destination_data_info">
-                    <p className="">Est. travel time</p>
-                    <span className="">3 days</span>
-                </div>
-            </section>
+                <DataInfo>
+                    <DataP className="">Avg. distance</DataP>
+                    <DataSpan>384,400 km</DataSpan>
+                </DataInfo>
+                <DataInfo>
+                    <DataP className="">Est. travel time</DataP>
+                    <DataSpan className="">3 days</DataSpan>
+                </DataInfo>
+            </Data>
         </div>
     )
 };

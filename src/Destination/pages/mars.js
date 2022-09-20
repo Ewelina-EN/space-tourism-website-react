@@ -2,48 +2,48 @@ import mars from "../images/image-mars.png";
 import '../destination.css';
 import Navbar from "../../navbar/navbar";
 import Navigation from "./navigation";
+import { DestinationContainer, Section, DestinationHeader, HeaderSpan, Planet, Title, Info, Data, DataInfo, DataP, DataSpan } from "../styled";
 
 export default function Mars() {
     return (
-
-        < main className="container_destination" >
+        <DestinationContainer>
             <Navbar />
             <Header />
-            <article className="destination_section">
+            <Section>
                 <img src={mars} alt="mars" />
                 <Content />
-            </article>
-        </main >
+            </Section>
+        </DestinationContainer>
     )
 };
 
 function Header() {
     return (
-        <div className="destination_header">
-            <span>01</span>Pick your destination
-        </div>
+        <DestinationHeader>
+            <HeaderSpan>01</HeaderSpan>Pick your destination
+        </DestinationHeader>
     )
 };
 
 function Content() {
     return (
-        <div className="destination_content">
+        <div>
             <Navigation />
-            <section className="destination_planet">
-                <p className="destination_title">Titan</p>
-                <p className="destination_info">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
-            </section>
-            <section className="destination_data">
+            <Planet>
+                <Title>Mars</Title>
+                <Info>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</Info>
+            </Planet>
+            <Data>
                 <div className="line"></div>
-                <div className="destination_data_info">
-                    <p className="">Avg. distance</p>
-                    <span>1.6 bil. km</span>
-                </div>
-                <div className="destination_data_info">
-                    <p className="">Est. travel time</p>
-                    <span className="">7 years</span>
-                </div>
-            </section>
+                <DataInfo>
+                    <DataP className="">Avg. distance</DataP>
+                    <DataSpan>225 MIL. km</DataSpan>
+                </DataInfo>
+                <DataInfo>
+                    <DataP className="">Est. travel time</DataP>
+                    <DataSpan className="">9 months</DataSpan>
+                </DataInfo>
+            </Data>
         </div>
     )
 };
