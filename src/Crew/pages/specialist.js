@@ -1,7 +1,7 @@
 import '../crew.css';
 import Navbar from "../../navbar/navbar"
 import specialist from "../images/image-mark-shuttleworth.png"
-import CrewNav from '../crewNav';
+import CrewNav from './crewNav';
 
 export default function Specialist() {
     return (

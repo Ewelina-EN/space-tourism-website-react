@@ -1,5 +1,5 @@
-import CustomLink from '../utils';
-import './crew.css';
+import CustomLink from '../../utils';
+import '../crew.css';
 
 
 export default function CrewNav() {

@@ -1,7 +1,7 @@
 import '../crew.css';
 import Navbar from "../../navbar/navbar"
 import engineer from "../images/image-anousheh-ansari.png"
-import CrewNav from '../crewNav';
+import CrewNav from './crewNav';
 
 export default function Engineer() {
     return (

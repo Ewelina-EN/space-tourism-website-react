@@ -1,7 +1,7 @@
-import './crew.css';
+import '../crew/crew.css';
 import Navbar from "../navbar/navbar"
 import commander from "./images/image-douglas-hurley.png"
-import CrewNav from './crewNav';
+import CrewNav from '../crew/pages/crewNav';
 
 export default function Crew() {
     return (

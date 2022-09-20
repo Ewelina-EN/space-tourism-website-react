@@ -1,7 +1,7 @@
 import '../crew.css';
 import Navbar from "../../navbar/navbar"
 import pilot from "../images/image-victor-glover.png"
-import CrewNav from '../crewNav';
+import CrewNav from './crewNav';
 
 export default function Pilot() {
     return (
