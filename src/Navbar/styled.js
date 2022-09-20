@@ -1,14 +1,17 @@
-.nav{
-    color:#FFFFFF;
+import styled, { css } from "styled-components";
+
+export const Navigation = styled.div`
+    color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-top: 40px;
-    margin-left: 55px;
-}
+    margin-left: 55px; 
+`;
 
-.nav_logo::after{
+export const Logo = styled.div`
+    &::after{
     content: "";
     position: absolute;
     max-width: 500px;
@@ -19,27 +22,28 @@
     background:#fff;
     opacity: 0.25;
     z-index: 10;
-}
+    }
+`;
 
-.nav_menu{
+export const Menu = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
     padding: 0 165px 0 80px;
-}
+`;
 
-.nav_menu ul{
+export const MenuList = styled.ul`
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     margin: 0;
     padding: 0;
     width: 630px;
-}
+`;
 
-.nav_menu a{
+export const Link = styled.a`
     font-family: 'Barlow Condensed';
     font-size: 16px;
     line-height: 19px;
@@ -50,17 +54,16 @@
     display: inline-block;
     padding:30px 0 28px 0;
     border-bottom: 3px transparent solid;
-}
+`;
 
-.nav_menu li{
-     border-bottom: 3px transparent solid;
-}
+export const List = styled.li`
+    border-bottom: 3px transparent solid;
 
-.nav_menu li.active{
-    border-color: #FFFFFF;
-}
+    ${(props) => props.active && css`
+        border-color: #FFFFFF
+    `};
 
-.nav_menu li:hover{
-    border-bottom: 3px #8A8B90 solid;
-}
-
+    &:hover{
+        border-bottom: 3px #8A8B90 solid;
+    }
+    `;

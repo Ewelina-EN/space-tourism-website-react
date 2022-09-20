@@ -1,25 +1,25 @@
 import logo from './logo.svg';
-import './navbar.css';
 import CustomLink from "../utils";
+import { Navigation, Logo, Menu, MenuList, Link, List } from './styled';
 
 export default function Navbar() {
 
   return (
     <>
-      <div className="nav">
-        <div className="nav_logo">
+      <Navigation>
+        <Logo>
           <img src={logo} alt="" />
-        </div>
-        <nav className="nav_menu">
-          <ul>
-            <CustomLink className="active" to="/" ><strong>00</strong> HOME</CustomLink>
-            <CustomLink to="/destination" ><strong>02</strong> DESTINATION</CustomLink>
-            <CustomLink to="/crew"><strong>03</strong> CREW</CustomLink>
-            <CustomLink to="/technology" ><strong>04</strong> TECHNOLOGY</CustomLink>
-          </ul>
-        </nav>
-      </div>
+        </Logo>
+        <Menu>
+          <MenuList>
+            <List active><CustomLink to="/" ><Link><strong>00</strong> HOME</Link></CustomLink></List>
+            <List><CustomLink to="/destination" ><Link><strong>02</strong> DESTINATION</Link></CustomLink></List>
+            <List><CustomLink to="/crew"><Link><strong>03</strong> CREW</Link></CustomLink></List>
+            <List><CustomLink to="/technology" ><Link><strong>04</strong> TECHNOLOGY</Link></CustomLink></List>
+          </MenuList>
+        </Menu>
+      </Navigation>
     </>
   )
-}
+};
 
