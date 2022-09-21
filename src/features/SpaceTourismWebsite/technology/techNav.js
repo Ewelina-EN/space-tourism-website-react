@@ -1,4 +1,4 @@
-import CustomLink from "../utils";
+import CustomLink from "../../../App/utils";
 import { MenuList, Link } from "./styled";
 
 export default function TechNav() {

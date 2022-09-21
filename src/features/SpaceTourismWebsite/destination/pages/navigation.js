@@ -1,5 +1,5 @@
 import '../destination.css';
-import CustomLink from "../../utils";
+import CustomLink from "../../../../App/utils";
 import {
     DestinationNav,
     MenuList,
