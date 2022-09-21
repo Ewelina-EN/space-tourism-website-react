@@ -1,6 +1,11 @@
 import '../destination.css';
 import CustomLink from "../../utils";
-import { DestinationNav, MenuList, List, Link } from '../styled';
+import {
+    DestinationNav,
+    MenuList,
+    List,
+    Link
+} from '../styled';
 
 export default function Navigation() {
 

@@ -1,5 +1,10 @@
 import CustomLink from '../../utils';
-import { Navigation, CrewNavigation, List, Link } from '../styled.js'
+import {
+    Navigation,
+    CrewNavigation,
+    List,
+    Link
+} from '../styled.js'
 
 
 export default function CrewNav() {

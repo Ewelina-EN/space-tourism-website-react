@@ -2,7 +2,19 @@ import moon from "./images/image-moon.png";
 import './destination.css';
 import Navbar from "../navbar/navbar";
 import Navigation from "./pages/navigation";
-import { DestinationContainer, Section, DestinationHeader, HeaderSpan, Planet, Title, Info, Data, DataInfo, DataP, DataSpan } from "./styled";
+import {
+    DestinationContainer,
+    Section,
+    DestinationHeader,
+    HeaderSpan,
+    Planet,
+    Title,
+    Info,
+    Data,
+    DataInfo,
+    DataP,
+    DataSpan
+} from "./styled";
 
 export default function Destination() {
     return (

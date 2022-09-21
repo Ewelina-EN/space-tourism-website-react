@@ -1,4 +1,12 @@
-import { HomeArticle, TextSection, SmallHeader, BigHeader, Content, HomeButton, BtnSpan } from './styled.js'
+import {
+    HomeArticle,
+    TextSection,
+    SmallHeader,
+    BigHeader,
+    Content,
+    HomeButton,
+    BtnSpan
+} from './styled.js'
 
 export default function Article() {
     return (

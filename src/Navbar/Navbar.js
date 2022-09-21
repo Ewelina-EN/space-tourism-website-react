@@ -1,6 +1,13 @@
 import logo from './logo.svg';
 import CustomLink from "../utils";
-import { Navigation, Logo, Menu, MenuList, Link, List } from './styled';
+import {
+  Navigation,
+  Logo,
+  Menu,
+  MenuList,
+  Link,
+  List
+} from './styled';
 
 export default function Navbar() {
 

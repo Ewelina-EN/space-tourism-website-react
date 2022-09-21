@@ -1,7 +1,17 @@
 import Navbar from "../navbar/navbar"
 import commander from "./images/image-douglas-hurley.png"
 import CrewNav from '../crew/pages/crewNav';
-import { ContainerCrew, Header, HeaderSpan, Content, SectionCrew, Role, Name, Info, Img } from './styled';
+import {
+    ContainerCrew,
+    Header,
+    HeaderSpan,
+    Content,
+    SectionCrew,
+    Role,
+    Name,
+    Info,
+    Img
+} from './styled';
 
 export default function Crew() {
     return (

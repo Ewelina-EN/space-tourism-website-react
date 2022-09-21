@@ -2,7 +2,19 @@ import Navigation from "./navigation";
 import titan from "../images/image-titan.png";
 import '../destination.css';
 import Navbar from "../../navbar/navbar";
-import { DestinationContainer, Section, DestinationHeader, HeaderSpan, Planet, Title, Info, Data, DataInfo, DataP, DataSpan } from "../styled";
+import {
+    DestinationContainer,
+    Section,
+    DestinationHeader,
+    HeaderSpan,
+    Planet,
+    Title,
+    Info,
+    Data,
+    DataInfo,
+    DataP,
+    DataSpan
+} from "../styled";
 
 export default function Titan() {
     return (
