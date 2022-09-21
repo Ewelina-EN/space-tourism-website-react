@@ -11,7 +11,7 @@ export const ContainerCrew = styled.main`
 export const Header = styled.div`
     font-family: 'Barlow Condensed';
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: ${({ theme }) => theme.colorNames.white};
     position: absolute;
     left: 10.14%;
     top: calc(25% - 34px/2);
@@ -43,7 +43,7 @@ export const Role = styled.p`
     font-style: normal;
     font-size: 32px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: ${({ theme }) => theme.colorNames.white};
     opacity: 0.5;
 `;
 
