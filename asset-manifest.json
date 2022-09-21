@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/space-tourism-website-react/static/css/main.cffc032e.css",
-    "main.js": "/space-tourism-website-react/static/js/main.c61bcb51.js",
+    "main.css": "/space-tourism-website-react/static/css/main.1c2f9741.css",
+    "main.js": "/space-tourism-website-react/static/js/main.0d78b56e.js",
     "static/js/787.9df01c42.chunk.js": "/space-tourism-website-react/static/js/787.9df01c42.chunk.js",
     "static/media/image-victor-glover.png": "/space-tourism-website-react/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/space-tourism-website-react/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
@@ -20,12 +20,12 @@
     "static/media/image-launch-vehicle-portrait.jpg": "/space-tourism-website-react/static/media/image-launch-vehicle-portrait.0c758955a178bdcc3230.jpg",
     "index.html": "/space-tourism-website-react/index.html",
     "static/media/logo.svg": "/space-tourism-website-react/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
-    "main.cffc032e.css.map": "/space-tourism-website-react/static/css/main.cffc032e.css.map",
-    "main.c61bcb51.js.map": "/space-tourism-website-react/static/js/main.c61bcb51.js.map",
+    "main.1c2f9741.css.map": "/space-tourism-website-react/static/css/main.1c2f9741.css.map",
+    "main.0d78b56e.js.map": "/space-tourism-website-react/static/js/main.0d78b56e.js.map",
     "787.9df01c42.chunk.js.map": "/space-tourism-website-react/static/js/787.9df01c42.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cffc032e.css",
-    "static/js/main.c61bcb51.js"
+    "static/css/main.1c2f9741.css",
+    "static/js/main.0d78b56e.js"
   ]
 }
