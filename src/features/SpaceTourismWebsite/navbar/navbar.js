@@ -5,8 +5,7 @@ import {
   Logo,
   Menu,
   MenuList,
-  Span,
-  List
+  Span
 } from './styled';
 
 export default function Navbar() {
@@ -19,10 +18,10 @@ export default function Navbar() {
         </Logo>
         <Menu>
           <MenuList>
-            <List active><CustomLink to="/" ><Span><strong>00</strong> HOME</Span></CustomLink></List>
-            <List><CustomLink to="/destination" ><Span><strong>02</strong> DESTINATION</Span></CustomLink></List>
-            <List><CustomLink to="/crew"><Span><strong>03</strong> CREW</Span></CustomLink></List>
-            <List><CustomLink to="/technology" ><Span><strong>04</strong> TECHNOLOGY</Span></CustomLink></List>
+            <CustomLink to="/" ><Span><strong>00</strong> HOME</Span></CustomLink>
+            <CustomLink to="/destination" ><Span><strong>02</strong> DESTINATION</Span></CustomLink>
+            <CustomLink to="/crew"><Span><strong>03</strong> CREW</Span></CustomLink>
+            <CustomLink to="/technology" ><Span><strong>04</strong> TECHNOLOGY</Span></CustomLink>
           </MenuList>
         </Menu>
       </Navigation>
