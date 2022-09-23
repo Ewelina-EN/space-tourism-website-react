@@ -92,7 +92,7 @@ export const MenuList = styled.ul`
     margin: 0;
 `;
 
-export const Link = styled.a`
+export const Span = styled.span`
     border: 1px solid #494A52;
     border-radius: 50%;
     width: 80px;

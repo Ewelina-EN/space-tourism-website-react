@@ -43,7 +43,7 @@ export const MenuList = styled.ul`
     width: 630px;
 `;
 
-export const Link = styled.a`
+export const Span = styled.span`
     font-family: 'Barlow Condensed';
     font-size: 16px;
     line-height: 19px;

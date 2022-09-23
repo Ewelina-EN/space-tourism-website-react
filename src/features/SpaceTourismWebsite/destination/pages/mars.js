@@ -1,5 +1,4 @@
 import mars from "../images/image-mars.png";
-import '../destination.css';
 import Navbar from "../../navbar/navbar";
 import Navigation from "./navigation";
 import {

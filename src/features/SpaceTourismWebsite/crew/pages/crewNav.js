@@ -3,7 +3,7 @@ import {
     Navigation,
     CrewNavigation,
     List,
-    Link
+    Span
 } from '../styled.js'
 
 
@@ -11,10 +11,10 @@ export default function CrewNav() {
     return (
         <Navigation>
             <CrewNavigation>
-                <List><CustomLink to="/crew"><Link active><span></span></Link></CustomLink></List>
-                <List><CustomLink to="/crew/specialist"><Link><span></span></Link></CustomLink></List>
-                <List><CustomLink to="/crew/pilot"><Link><span></span></Link></CustomLink></List>
-                <List><CustomLink to="/crew/engineer"><Link><span></span></Link></CustomLink></List>
+                <List><CustomLink to="/crew"><Span active><span></span></Span></CustomLink></List>
+                <List><CustomLink to="/crew/specialist"><Span><span></span></Span></CustomLink></List>
+                <List><CustomLink to="/crew/pilot"><Span><span></span></Span></CustomLink></List>
+                <List><CustomLink to="/crew/engineer"><Span><span></span></Span></CustomLink></List>
             </CrewNavigation>
         </Navigation>
     )

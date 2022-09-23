@@ -1,6 +1,5 @@
 import Navigation from "./navigation";
 import titan from "../images/image-titan.png";
-import '../destination.css';
 import Navbar from "../../navbar/navbar";
 import {
     DestinationContainer,

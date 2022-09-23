@@ -120,7 +120,7 @@ export const MenuList = styled.ul`
     padding: 0;
 `;
 
-export const Link = styled.a`
+export const Span = styled.span`
     text-decoration: none;
     border-bottom: 3px transparent solid;
     color: #FFFFFF;

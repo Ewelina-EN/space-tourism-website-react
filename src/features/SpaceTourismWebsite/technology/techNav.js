@@ -1,13 +1,13 @@
 import CustomLink from "../../../App/utils";
-import { MenuList, Link } from "./styled";
+import { MenuList, Span } from "./styled";
 
 export default function TechNav() {
     return (
         <>
             <MenuList>
-                <CustomLink to="/technology"><Link active>1</Link></CustomLink>
-                <CustomLink to="/technology/port"><Link>2</Link></CustomLink>
-                <CustomLink to="/technology/capsule"><Link>3</Link></CustomLink>
+                <CustomLink to="/technology"><Span active>1</Span></CustomLink>
+                <CustomLink to="/technology/port"><Span>2</Span></CustomLink>
+                <CustomLink to="/technology/capsule"><Span>3</Span></CustomLink>
             </MenuList>
         </>
     )

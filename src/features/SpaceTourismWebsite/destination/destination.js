@@ -1,5 +1,4 @@
 import moon from "./images/image-moon.png";
-import './destination.css';
 import Navbar from "../navbar/navbar";
 import Navigation from "./pages/navigation";
 import {

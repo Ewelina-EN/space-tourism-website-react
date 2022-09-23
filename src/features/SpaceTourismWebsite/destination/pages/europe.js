@@ -1,5 +1,4 @@
 import europe from "../images/image-europa.png";
-import '../destination.css';
 import Navbar from "../../navbar/navbar";
 import Navigation from "./navigation";
 import {

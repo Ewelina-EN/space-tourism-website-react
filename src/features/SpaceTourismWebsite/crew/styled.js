@@ -11,7 +11,7 @@ export const ContainerCrew = styled.main`
 export const Header = styled.div`
     font-family: 'Barlow Condensed';
     text-transform: uppercase;
-    color: ${({ theme }) => theme.colorNames.white};
+    color: #FFFFFF;
     position: absolute;
     left: 10.14%;
     top: calc(25% - 34px/2);
@@ -43,7 +43,7 @@ export const Role = styled.p`
     font-style: normal;
     font-size: 32px;
     text-transform: uppercase;
-    color: ${({ theme }) => theme.colorNames.white};
+    color: #FFFFFF;
     opacity: 0.5;
 `;
 
@@ -88,7 +88,7 @@ export const List = styled.li`
     padding-right: 25px;
 `;
 
-export const Link = styled.a`
+export const Span = styled.span`
     display: inline-block;
     border-radius: 50%;
     background-color: #363841;
