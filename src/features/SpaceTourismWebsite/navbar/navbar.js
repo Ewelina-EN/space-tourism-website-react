@@ -17,7 +17,7 @@ export default function Navbar() {
           <img src={logo} alt="" />
         </Logo>
         <Menu>
-          <MenuList>
+          <MenuList className='navigation'>
             <CustomLink to="/" ><Span><strong>00</strong> HOME</Span></CustomLink>
             <CustomLink to="/destination" ><Span><strong>02</strong> DESTINATION</Span></CustomLink>
             <CustomLink to="/crew"><Span><strong>03</strong> CREW</Span></CustomLink>

@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
 
 export const Navigation = styled.div`
     color: #FFFFFF;
@@ -59,11 +60,12 @@ export const Span = styled.span`
 export const List = styled.li`
     border-bottom: 3px transparent solid;
 
-    &:active{
-        border-color: #FFFFFF
+    &:active, &.active{
+        border-color: #FFFFFF;
     };
 
     &:hover{
         border-bottom: 3px #8A8B90 solid;
     }
-    `;
+    `
+    ;

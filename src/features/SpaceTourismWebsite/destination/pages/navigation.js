@@ -11,11 +11,11 @@ export default function Navigation() {
     return (
         <>
             <DestinationNav>
-                <MenuList>
-                    <List><CustomLink to="/destination"><Span>Moon</Span></CustomLink></List>
-                    <List><CustomLink to="/destination/mars"><Span>Mars</Span></CustomLink></List>
-                    <List><CustomLink to="/destination/europe"><Span>Europe</Span></CustomLink></List>
-                    <List><CustomLink to="/destination/titan"><Span>Titan</Span></CustomLink></List>
+                <MenuList className="navigation">
+                    <CustomLink to="/destination"><Span>Moon</Span></CustomLink>
+                    <CustomLink to="/destination/mars"><Span>Mars</Span></CustomLink>
+                    <CustomLink to="/destination/europe"><Span>Europe</Span></CustomLink>
+                    <CustomLink to="/destination/titan"><Span>Titan</Span></CustomLink>
                 </MenuList>
             </DestinationNav>
         </>
