@@ -72,20 +72,9 @@ export const Img = styled.img`
 
 export const Navigation = styled.nav`
     list-style: none;
-`;
-
-export const CrewNavigation = styled.ul`
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    list-style: none;
     margin-top: 100px;
     padding: 0;
-`;
-
-export const List = styled.li`
-    padding-right: 25px;
 `;
 
 export const Span = styled.span`
@@ -94,6 +83,7 @@ export const Span = styled.span`
     background-color: #363841;
     width: 15px;
     height: 15px;
+    margin-right: 25px;
 
 
     ${(props) => props.active && css`

@@ -60,12 +60,7 @@ export const Span = styled.span`
 export const List = styled.li`
     border-bottom: 3px transparent solid;
 
-    &:active, &.active{
-        border-color: #FFFFFF;
-    };
 
-    &:hover{
-        border-bottom: 3px #8A8B90 solid;
-    }
+
     `
     ;
