@@ -12,7 +12,8 @@ import {
     Data,
     DataInfo,
     DataP,
-    DataSpan
+    DataSpan,
+    Image
 } from "../styled";
 
 export default function Mars() {
@@ -21,7 +22,7 @@ export default function Mars() {
             <Navbar />
             <Header />
             <Section>
-                <img src={mars} alt="mars" />
+                <Image src={mars} alt="mars" />
                 <Content />
             </Section>
         </DestinationContainer>

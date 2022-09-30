@@ -12,7 +12,8 @@ import {
     Data,
     DataInfo,
     DataP,
-    DataSpan
+    DataSpan,
+    Image
 } from "../styled";
 
 export default function Titan() {
@@ -21,7 +22,7 @@ export default function Titan() {
             <Navbar />
             <Header />
             <Section>
-                <img src={titan} alt="titan" />
+                <Image src={titan} alt="titan" />
                 <Content />
             </Section>
         </DestinationContainer>

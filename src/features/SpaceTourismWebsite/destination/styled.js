@@ -26,14 +26,14 @@ export const Section = styled.article`
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 160px 0 70px 0;
+    padding: 100px 0 70px 0;
 
     @media(max-width: 768px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding: 29px 0 58px 0;
     }
 `;
 
@@ -41,6 +41,7 @@ export const Image = styled.img`
     @media(max-width: 768px) {
         width: 170px;
         height: 170px;
+        margin-bottom: 29px;
     }
 `;
 
@@ -48,17 +49,19 @@ export const DestinationHeader = styled.div`
     font-family: 'Barlow Condensed';
     text-transform: uppercase;
     color: #FFFFFF;
-    position: absolute;
     left: 10.14%;
     top: calc(25% - 34px/2);
     font-size: 28px;
     letter-spacing: 4.725px;
+    padding: 70px 0 0 150px;
+    
 
     @media(max-width: 768px) {
         text-align: center;
         font-size: 16px;
         line-height: 19px;
-        letter-spacing: 2.7px
+        letter-spacing: 2.7px;
+        padding: 88px 0 0 0;
     }
 `;
 
@@ -86,7 +89,6 @@ export const Planet = styled.section`
         align-items:center;
         justify-content: center;
     }
-    
 `;
 
 export const Title = styled.p`
@@ -95,7 +97,7 @@ export const Title = styled.p`
     font-style: normal;
     font-weight: 400;
     font-size: 100px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 0 0;
 
     @media(max-width: 768px) {
         font-size:56px;
@@ -134,6 +136,8 @@ export const Data = styled.section`
     @media(max-width: 768px) {
         display: flex;
         flex-direction: column; 
+        border-top: 1px solid #383B4B;
+        margin: 20px 24px;
     }   
 `;
 
@@ -142,7 +146,7 @@ export const DataInfo = styled.div`
     padding-right: 79px;
 
     @media(max-width: 768px) {
-        margin: 10px 0 20px 0;
+        margin: 32px 0 0 0;
         padding:0;
         text-align: center;   
     }
@@ -197,18 +201,21 @@ export const MenuList = styled.ul`
     list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
-    padding: 0;
+    padding: 0 30px 0 30px;
   
 `;
 
 export const Span = styled.span`
     border-bottom: 3px transparent solid;
     color: #FFFFFF;
-    padding: 10px 0;
+    padding: 0 0 10px 0;
 
     @media(max-width: 768px) {
-    color: #D0D6F9;}
+    color: #D0D6F9;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    }
 `;
 

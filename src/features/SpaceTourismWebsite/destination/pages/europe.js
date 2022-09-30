@@ -12,7 +12,8 @@ import {
     Data,
     DataInfo,
     DataP,
-    DataSpan
+    DataSpan,
+    Image
 } from "../styled";
 
 
@@ -22,7 +23,7 @@ export default function Europe() {
             <Navbar />
             <Header />
             <Section>
-                <img src={europe} alt="europe" />
+                <Image src={europe} alt="europe" />
                 <Content />
             </Section>
         </DestinationContainer>
