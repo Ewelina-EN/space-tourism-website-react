@@ -2,7 +2,6 @@ import CustomLink from "../../../../App/utils";
 import {
     DestinationNav,
     MenuList,
-    List,
     Span
 } from '../styled';
 
