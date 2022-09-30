@@ -202,9 +202,12 @@ export const MenuList = styled.ul`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-around;
-    padding: 0 30px 0 30px;
+    justify-content: space-between;
+    padding: 0;
   
+    @media(max-width: 768px) {
+        justify-content: space-around;
+    }
 `;
 
 export const Span = styled.span`
