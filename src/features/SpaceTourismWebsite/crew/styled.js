@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import imgCrew from "./images/background-crew-desktop.jpg"
 
 export const ContainerCrew = styled.main`
@@ -70,27 +70,29 @@ export const Img = styled.img`
     height: 600px;
 `;
 
-export const Navigation = styled.nav`
+// navigation for Crew
+
+export const CrewNavigation = styled.nav`
     list-style: none;
     display: flex;
     margin-top: 100px;
     padding: 0;
 `;
 
-export const Span = styled.span`
+export const MenuList = styled.ul`
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    list-style: none;
+`;
+
+export const Span = styled.span`    
     display: inline-block;
-    border-radius: 50%;
-    background-color: #363841;
-    width: 15px;
-    height: 15px;
     margin-right: 25px;
-
-
-    ${(props) => props.active && css`
-        background-color: #FFFFFF
-    `};
-
-    &:hover{
-        background-color: #ffffff7d;
-    }
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #383838;
 `;

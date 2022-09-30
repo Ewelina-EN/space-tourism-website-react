@@ -1,7 +1,20 @@
 .navigation li.active{
+    padding: 0 0 10px 0;
     border-bottom: 3px #fff solid;
+}
+
+.navigation a{
+    text-decoration: none;
 }
 
 .navigation li:hover{
     border-bottom: 3px #8A8B90 solid;
 }
+
+/* .crew .active{
+    background-color: #fff;
+}
+
+.crew :hover{
+    background-color: #ffffff7d;
+} */

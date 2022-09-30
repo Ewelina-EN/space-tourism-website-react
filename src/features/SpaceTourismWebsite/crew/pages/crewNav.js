@@ -1,17 +1,20 @@
 import CustomLink from "../../../../App/utils";
 import {
-    Navigation,
+    CrewNavigation,
+    MenuList,
     Span
 } from '../styled.js'
 
 
 export default function CrewNav() {
     return (
-        <Navigation>
-            <CustomLink to="/crew"><Span active><span></span></Span></CustomLink>
-            <CustomLink to="/crew/specialist"><Span><span></span></Span></CustomLink>
-            <CustomLink to="/crew/pilot"><Span><span></span></Span></CustomLink>
-            <CustomLink to="/crew/engineer"><Span><span></span></Span></CustomLink>
-        </Navigation>
+        <CrewNavigation className="crew">
+            <MenuList >
+                <CustomLink to="/crew"><Span></Span></CustomLink>
+                <CustomLink to="/crew/specialist"><Span></Span></CustomLink>
+                <CustomLink to="/crew/pilot"><Span></Span></CustomLink>
+                <CustomLink to="/crew/engineer"><Span></Span></CustomLink>
+            </MenuList>
+        </CrewNavigation>
     )
 }
