@@ -10,7 +10,9 @@ import {
     Role,
     Name,
     Info,
-    Img
+    Img,
+    Mobile,
+    MobileContent
 } from './styled';
 
 export default function Crew() {
@@ -20,6 +22,19 @@ export default function Crew() {
             <Header>
                 <HeaderSpan>02</HeaderSpan> Meet your crew
             </Header>
+            <Mobile>
+                <MobileContent>
+                    <Img src={commander} alt="" />
+                    <SectionCrew>
+                        <CrewNav />
+                        <Role>Commander</Role>
+                        <Name>Douglas Hurley</Name>
+                        <Info>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+                            and former NASA astronaut. He launched into space for the third time as
+                            commander of Crew Dragon Demo-2.</Info>
+                    </SectionCrew>
+                </MobileContent>
+            </Mobile>
             <Content>
                 <SectionCrew>
                     <Role>Commander</Role>
