@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.f4e9dcae.css","mappings":"AAAA,sBACI,4BACJ,CAEA,qBACI,+BACJ","sources":["App/App.css"],"sourcesContent":[".navigation li.active{\n    border-bottom: 3px #fff solid;\n}\n\n.navigation li:hover{\n    border-bottom: 3px #8A8B90 solid;\n}"],"names":[],"sourceRoot":""}
