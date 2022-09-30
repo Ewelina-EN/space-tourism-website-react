@@ -1,6 +1,6 @@
 import Navbar from '../../navbar/navbar';
 import capsule from "../images/image-space-capsule-portrait.jpg";
-import capsuleLand from "../images/image-space-capsule-landscape.jpg"
+import capsuleLand from "../images/image-space-capsule-landscape.jpg";
 import TechNav from '../techNav';
 import {
     TechContainer,
@@ -56,4 +56,4 @@ export default function Capsule() {
             </Content>
         </TechContainer>
     )
-}
+};

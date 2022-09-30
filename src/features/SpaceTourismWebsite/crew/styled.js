@@ -161,14 +161,13 @@ export const Span = styled.span`
     height: 20px;
     background-color: #FFFFFF;
 
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
         margin: 0 10px;
         border-radius: 50%;
         width: 10px;
         height: 10px;
         background-color: #FFFFFF;
     }
-
 `;
 
 export const Mobile = styled.article`

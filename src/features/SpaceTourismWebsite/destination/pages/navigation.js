@@ -6,7 +6,6 @@ import {
 } from '../styled';
 
 export default function Navigation() {
-
     return (
         <>
             <DestinationNav>
@@ -19,4 +18,4 @@ export default function Navigation() {
             </DestinationNav>
         </>
     )
-}
+};

@@ -3,8 +3,7 @@ import {
     CrewNavigation,
     MenuList,
     Span
-} from '../styled.js'
-
+} from '../styled.js';
 
 export default function CrewNav() {
     return (
@@ -17,4 +16,4 @@ export default function CrewNav() {
             </MenuList>
         </CrewNavigation>
     )
-}
+};

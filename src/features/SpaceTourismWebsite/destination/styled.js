@@ -2,17 +2,13 @@ import styled from "styled-components";
 import imgDestinationDesktop from "./images/background-destination-desktop.jpg";
 import imgDestinationMobile from "./images/background-destination-mobile.jpg";
 
-// @media(max - width: 768px) {
-
-// }
-
 export const DestinationContainer = styled.main`
     background-image: url(${imgDestinationDesktop});
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
         background-image: url(${imgDestinationMobile});
         background-position: bottom;
         background-repeat: no-repeat;
@@ -75,7 +71,7 @@ export const HeaderSpan = styled.span`
         text-align: center;
         font-size: 16px;
         line-height: 19px;
-        letter-spacing: 2.7px
+        letter-spacing: 2.7px;
     }
 `;
 
@@ -221,4 +217,3 @@ export const Span = styled.span`
     padding: 0 0 10px 0;
     }
 `;
-

@@ -97,7 +97,6 @@ export const HomeButton = styled.button`
         background: transparent;
     }
     }
-
 `;
 
 export const BtnSpan = styled.span`

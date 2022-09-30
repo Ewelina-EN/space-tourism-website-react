@@ -6,7 +6,7 @@ import {
     Content,
     HomeButton,
     BtnSpan
-} from './styled.js'
+} from './styled.js';
 
 export default function Article() {
     return (
@@ -15,7 +15,7 @@ export default function Article() {
             <Button />
         </HomeArticle>
     )
-}
+};
 
 function HomeTextSection() {
     return (
@@ -27,10 +27,10 @@ function HomeTextSection() {
                 because we’ll give you a truly out of this world experience!</Content>
         </TextSection>
     )
-}
+};
 
 function Button() {
     return (
         <HomeButton><BtnSpan>Explore</BtnSpan></HomeButton>
     )
-}
+};

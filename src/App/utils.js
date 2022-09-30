@@ -15,6 +15,4 @@ export default function CustomLink({ to, children, ...props }) {
             <Link to={to} {...props}>{children}</Link>
         </li>
     )
-}
-
-
+};

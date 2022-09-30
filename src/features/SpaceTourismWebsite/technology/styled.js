@@ -142,8 +142,8 @@ export const NavMenu = styled.div`
     margin-right: 40px;
     font-family: 'Bellefair';
     font-size: 32px;
-
-      @media (max-width: 768px) {
+    
+    @media (max-width: 768px) {
         display:none;
     }
 `;
@@ -202,6 +202,5 @@ export const Mobile = styled.article`
         padding-top: 32px;
     }
 `;
+
 export const MobileContent = styled.div``;
-
-

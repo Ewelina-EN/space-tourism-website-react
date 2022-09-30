@@ -1,7 +1,19 @@
-import Navbar from "../../navbar/navbar"
-import pilot from "../images/image-victor-glover.png"
+import Navbar from "../../navbar/navbar";
+import pilot from "../images/image-victor-glover.png";
 import CrewNav from './crewNav';
-import { ContainerCrew, Header, HeaderSpan, Content, SectionCrew, Role, Name, Info, Img, Mobile, MobileContent } from '../styled';
+import {
+    ContainerCrew,
+    Header,
+    HeaderSpan,
+    Content,
+    SectionCrew,
+    Role,
+    Name,
+    Info,
+    Img,
+    Mobile,
+    MobileContent
+} from '../styled';
 
 export default function Pilot() {
     return (
@@ -32,4 +44,4 @@ export default function Pilot() {
             </Content>
         </ContainerCrew>
     )
-}
+};

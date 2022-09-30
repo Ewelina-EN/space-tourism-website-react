@@ -1,5 +1,5 @@
-import Navbar from "../navbar/navbar"
-import commander from "./images/image-douglas-hurley.png"
+import Navbar from "../navbar/navbar";
+import commander from "./images/image-douglas-hurley.png";
 import CrewNav from '../crew/pages/crewNav';
 import {
     ContainerCrew,
@@ -48,4 +48,4 @@ export default function Crew() {
             </Content>
         </ContainerCrew>
     )
-}
+};

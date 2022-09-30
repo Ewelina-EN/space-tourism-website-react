@@ -1,7 +1,19 @@
-import Navbar from "../../navbar/navbar"
-import specialist from "../images/image-mark-shuttleworth.png"
+import Navbar from "../../navbar/navbar";
+import specialist from "../images/image-mark-shuttleworth.png";
 import CrewNav from './crewNav';
-import { ContainerCrew, Header, HeaderSpan, Content, SectionCrew, Role, Name, Info, Img, Mobile, MobileContent } from '../styled';
+import {
+    ContainerCrew,
+    Header,
+    HeaderSpan,
+    Content,
+    SectionCrew,
+    Role,
+    Name,
+    Info,
+    Img,
+    Mobile,
+    MobileContent
+} from '../styled';
 
 export default function Specialist() {
     return (
@@ -32,4 +44,4 @@ export default function Specialist() {
             </Content>
         </ContainerCrew>
     )
-}
+};

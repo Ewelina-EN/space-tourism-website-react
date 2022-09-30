@@ -1,8 +1,19 @@
-import Navbar from "../../navbar/navbar"
-import engineer from "../images/image-anousheh-ansari.png"
+import Navbar from "../../navbar/navbar";
+import engineer from "../images/image-anousheh-ansari.png";
 import CrewNav from './crewNav';
-import { ContainerCrew, Header, HeaderSpan, Content, SectionCrew, Role, Name, Info, Img, Mobile, MobileContent } from '../styled';
-
+import {
+    ContainerCrew,
+    Header,
+    HeaderSpan,
+    Content,
+    SectionCrew,
+    Role,
+    Name,
+    Info,
+    Img,
+    Mobile,
+    MobileContent
+} from '../styled';
 
 export default function Engineer() {
     return (
@@ -33,4 +44,4 @@ export default function Engineer() {
             </Content>
         </ContainerCrew>
     )
-}
+};

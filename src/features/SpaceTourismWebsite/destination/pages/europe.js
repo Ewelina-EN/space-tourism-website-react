@@ -16,7 +16,6 @@ import {
     Image
 } from "../styled";
 
-
 export default function Europe() {
     return (
         <DestinationContainer>
@@ -47,7 +46,6 @@ function Content() {
                 <Info>The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</Info>
             </Planet>
             <Data>
-                <div className="line"></div>
                 <DataInfo>
                     <DataP className="">Avg. distance</DataP>
                     <DataSpan>2628 MIL. km</DataSpan>
