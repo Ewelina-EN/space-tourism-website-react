@@ -1,5 +1,6 @@
 import Navbar from '../../navbar/navbar';
 import port from "../images/image-spaceport-portrait.jpg";
+import portLand from "../images/image-spaceport-landscape.jpg";
 import TechNav from '../techNav';
 import {
     TechContainer,
@@ -11,7 +12,10 @@ import {
     Info,
     Title,
     Keyword,
-    Definition
+    Definition,
+    Mobile,
+    MobileContent,
+    Image
 } from '../styled';
 
 export default function Port() {
@@ -21,6 +25,22 @@ export default function Port() {
             <Header>
                 <HeaderSpan>03</HeaderSpan>Space launch 101
             </Header>
+            <Mobile>
+                <Image src={portLand} alt="port" />
+                <TechNav />
+                <MobileContent>
+                    <ContentBox>
+                        <NavMenu>
+                            <TechNav />
+                        </NavMenu>
+                        <Info>
+                            <Title>The terminology...</Title>
+                            <Keyword>Spaceport</Keyword>
+                            <Definition>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</Definition>
+                        </Info>
+                    </ContentBox>
+                </MobileContent>
+            </Mobile>
             <Content>
                 <ContentBox>
                     <NavMenu>
@@ -28,11 +48,8 @@ export default function Port() {
                     </NavMenu>
                     <Info>
                         <Title>The terminology...</Title>
-                        <Keyword>Launch vehicle</Keyword>
-                        <Definition>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
-                            payload from Earth's surface to space, usually to Earth orbit or beyond. Our
-                            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
-                            it's quite an awe-inspiring sight on the launch pad!</Definition>
+                        <Keyword>Spaceport</Keyword>
+                        <Definition>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</Definition>
                     </Info>
                 </ContentBox>
                 <section><img src={port} alt="port" /></section>

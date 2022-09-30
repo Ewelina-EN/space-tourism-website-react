@@ -1,22 +1,46 @@
 import styled from "styled-components";
-import imgTech from "./images/background-technology-desktop.jpg";
+import imgTechDesktop from "./images/background-technology-desktop.jpg";
+import imgTechMobile from "./images/background-technology-mobile.jpg";
 
 export const TechContainer = styled.main`
-    background-image: url(${imgTech});
+    background-image: url(${imgTechDesktop});
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url(${imgTechMobile});
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+`;
+
+export const Image = styled.img`
+    @media (max-width: 768px) {
+        height: 170px;
+        width: 100%;
+    }
 `;
 
 export const Header = styled.div`
     font-family: 'Barlow Condensed';
     text-transform: uppercase;
     color: #FFFFFF;
-    position: absolute;
     left: 10.14%;
     top: calc(25% - 34px/2);
     font-size: 28px;
     letter-spacing: 4.725px;
+    padding: 70px 0 0 150px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 24px 0 0 0;
+    }
 `;
 
 export const HeaderSpan = styled.span`
@@ -32,7 +56,12 @@ export const Content = styled.article`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 136px 0 101px 115px ;
+    padding: 70px 0 15px 70px;
+    margin: 0;
+
+     @media (max-width: 768px) {
+        display:none;
+     }
 `;
 
 export const ContentBox = styled.div`
@@ -47,6 +76,15 @@ export const Info = styled.section`
     align-items: flex-start;
     justify-content: center;
     margin: 0 0 0 40px;
+
+    @media (max-width: 768px) {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+        padding: 26px 0 100px 0;
+        margin:0;
+    }
 `;
 
 export const Title = styled.p`
@@ -57,6 +95,13 @@ export const Title = styled.p`
     color: #D0D6F9;
     text-transform: uppercase;
     margin-top: 0;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 2.3625px;
+    }
 `;
 
 export const Keyword = styled.p`
@@ -66,6 +111,12 @@ export const Keyword = styled.p`
     color: #FFFFFF;
     text-transform: uppercase;
     margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
 `;
 
 export const Definition = styled.p`
@@ -74,22 +125,40 @@ export const Definition = styled.p`
     line-height: 32px;
     color: #D0D6F9;
     width: 444px;
+
+    @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        width:327px;
+    }
 `;
 
 // technav menu
 
-export const NavMenu = styled.section`
+export const NavMenu = styled.div`
     display: flex;
     flex-direction: column;
     margin-right: 40px;
     font-family: 'Bellefair';
     font-size: 32px;
+
+      @media (max-width: 768px) {
+        display:none;
+    }
 `;
 
 export const MenuList = styled.ul`
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @media (max-width: 768px) {
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+    }
 `;
 
 export const Span = styled.span`
@@ -113,11 +182,26 @@ export const Span = styled.span`
 
     &:hover{
         border: 1px #FFFFFF solid;
+    } 
+
+    @media (max-width: 768px) {
+        height:40px;
+        width: 40px;
+        margin: 34px 15px 0 0;
     }
-
-    
-
-   
 `;
+
+export const Mobile = styled.article`
+    display: none;
+
+    @media (max-width: 768px) {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 32px;
+    }
+`;
+export const MobileContent = styled.div``;
 
 
