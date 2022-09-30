@@ -1,11 +1,23 @@
 import styled from "styled-components";
-import imgDestination from "./images/background-destination-desktop.jpg";
+import imgDestinationDesktop from "./images/background-destination-desktop.jpg";
+import imgDestinationMobile from "./images/background-destination-mobile.jpg";
+
+// @media(max - width: 768px) {
+
+// }
 
 export const DestinationContainer = styled.main`
-    background-image: url(${imgDestination});
+    background-image: url(${imgDestinationDesktop});
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+
+     @media (max-width: 768px) {
+        background-image: url(${imgDestinationMobile});
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 `;
 
 export const Section = styled.article`
@@ -15,6 +27,21 @@ export const Section = styled.article`
     align-items: center;
     justify-content: space-evenly;
     padding: 160px 0 70px 0;
+
+    @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+`;
+
+export const Image = styled.img`
+    @media(max-width: 768px) {
+        width: 170px;
+        height: 170px;
+    }
 `;
 
 export const DestinationHeader = styled.div`
@@ -26,6 +53,13 @@ export const DestinationHeader = styled.div`
     top: calc(25% - 34px/2);
     font-size: 28px;
     letter-spacing: 4.725px;
+
+    @media(max-width: 768px) {
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px
+    }
 `;
 
 export const HeaderSpan = styled.span`
@@ -33,10 +67,26 @@ export const HeaderSpan = styled.span`
     font-weight: 700;
     mix-blend-mode: normal;
     opacity: 0.25;
+
+    @media(max-width: 768px) {
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px
+    }
 `;
 
 export const Planet = styled.section`
     width: 450px;
+
+    @media(max-width: 768px) {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+    
 `;
 
 export const Title = styled.p`
@@ -46,6 +96,12 @@ export const Title = styled.p`
     font-weight: 400;
     font-size: 100px;
     margin: 20px 0 20px 0;
+
+    @media(max-width: 768px) {
+        font-size:56px;
+        line-height: 64px;
+        text-align: center;
+    }
 `;
 
 export const Info = styled.p`
@@ -57,6 +113,14 @@ export const Info = styled.p`
     line-height: 32px;
     color: #D0D6F9;
     margin-bottom: 50px;
+
+    @media(max-width: 768px) {
+        font-size: 15px;
+        line-height:25px;
+        text-align: center;
+        width: 327px;
+        margin: 0;
+    }
 `;
 
 export const Data = styled.section`
@@ -66,11 +130,22 @@ export const Data = styled.section`
     text-transform: uppercase;
     margin-top: 20px;
     border-top: 1px solid #383B4B;
+
+    @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column; 
+    }   
 `;
 
 export const DataInfo = styled.div`
     margin-top: 10px;
     padding-right: 79px;
+
+    @media(max-width: 768px) {
+        margin: 10px 0 20px 0;
+        padding:0;
+        text-align: center;   
+    }
 `;
 
 export const DataP = styled.p`
@@ -107,7 +182,14 @@ export const DestinationNav = styled.nav`
     letter-spacing: 2.7px;
     text-transform: uppercase;
     margin: 0;
-    text-decoration:none;
+
+    @media(max-width: 768px) {
+        justify-content: center;  
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+        color: #D0D6F9;
+    }
 `;
 
 export const MenuList = styled.ul`
@@ -118,27 +200,15 @@ export const MenuList = styled.ul`
     align-items: center;
     justify-content: space-around;
     padding: 0;
+  
 `;
 
 export const Span = styled.span`
-    text-decoration: none;
     border-bottom: 3px transparent solid;
     color: #FFFFFF;
     padding: 10px 0;
+
+    @media(max-width: 768px) {
+    color: #D0D6F9;}
 `;
-
-export const List = styled.li`
-    padding-bottom: 13px;
-    border-bottom: 3px transparent solid;
-
-    &:active{
-        border-color: #FFFFFF;
-    }
-
-    &:hover{
-        border-color: #8a8b90;
-    }
-`;
-
-
 

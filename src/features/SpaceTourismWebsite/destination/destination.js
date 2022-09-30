@@ -12,7 +12,8 @@ import {
     Data,
     DataInfo,
     DataP,
-    DataSpan
+    DataSpan,
+    Image
 } from "./styled";
 
 export default function Destination() {
@@ -21,7 +22,7 @@ export default function Destination() {
             <Navbar />
             <Header />
             <Section>
-                <img src={moon} alt="moon" />
+                <Image src={moon} alt="moon" />
                 <Content />
             </Section>
         </DestinationContainer>
@@ -47,7 +48,6 @@ function Content() {
                     Luna 2 and Apollo 11 landing sites.</Info>
             </Planet>
             <Data>
-                <div className="line"></div>
                 <DataInfo>
                     <DataP className="">Avg. distance</DataP>
                     <DataSpan>384,400 km</DataSpan>
