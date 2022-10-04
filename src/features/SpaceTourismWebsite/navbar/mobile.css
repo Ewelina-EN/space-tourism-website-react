@@ -1,0 +1,10 @@
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.active {
+    display:flex;
+    align-items: flex-start;
+    padding: 0;
+    position: absolute;
+}

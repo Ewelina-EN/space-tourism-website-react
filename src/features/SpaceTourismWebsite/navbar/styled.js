@@ -1,5 +1,4 @@
-import styled, { css } from "styled-components";
-
+import styled from "styled-components";
 
 export const Navigation = styled.div`
     color: #FFFFFF;
@@ -9,6 +8,23 @@ export const Navigation = styled.div`
     align-items: center;
     padding-top: 40px;
     margin-left: 55px; 
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const NavMobile = styled.div`
+        display: none;
+        
+        @media (max-width: 667px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 0 0 0;
+            margin: 0 24px;
+    }
 `;
 
 export const Logo = styled.div`
@@ -24,6 +40,18 @@ export const Logo = styled.div`
     opacity: 0.25;
     z-index: 10;
     }
+
+    @media (max-width: 768px) {
+        &::after{
+            display:none;
+        }
+    }
+`;
+
+export const ImgLogo = styled.img`
+    @media (max-width: 768px) {
+            display:inline;
+    }
 `;
 
 export const Menu = styled.nav`
@@ -35,6 +63,23 @@ export const Menu = styled.nav`
     padding: 0 165px 0 80px;
 `;
 
+export const MenuMobile = styled.nav`
+    display: none;
+
+    @media (max-width: 768px) {
+        display:flex;
+        align-items: flex-start;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding-top: 33px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+    }
+`;
+
 export const MenuList = styled.ul`
     display: flex;
     justify-content: space-evenly;
@@ -42,6 +87,15 @@ export const MenuList = styled.ul`
     margin: 0;
     padding: 0;
     width: 630px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 254px;
+        padding-left: 24px;
+    }
 `;
 
 export const Span = styled.span`
@@ -55,12 +109,34 @@ export const Span = styled.span`
     display: inline-block;
     padding:30px 0 28px 0;
     border-bottom: 3px transparent solid;
+
+    @media (max-width: 768px) {
+        padding: 30px 0 5px 0;
+        margin: 0;
+    }
+
 `;
 
 export const List = styled.li`
     border-bottom: 3px transparent solid;
+`;
 
+export const ImgCloseIcon = styled.img`
+    display: none;
 
+    @media (max-width: 768px) {
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+        margin-bottom: 64px;
+        margin-left: 180px;
+    }
+`;
 
-    `
-    ;
+export const ImgBurgerIcon = styled.img`
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+`;

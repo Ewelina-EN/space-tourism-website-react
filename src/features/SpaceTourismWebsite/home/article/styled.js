@@ -43,6 +43,7 @@ export const SmallHeader = styled.p`
         line-height: 19px;
         text-align: center;
         letter-spacing: 2.7px;
+        margin-top: 48px;
     }
 `;
 

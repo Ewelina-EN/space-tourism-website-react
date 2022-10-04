@@ -13,6 +13,5 @@ export const Container = styled.main`
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        max-height: 667px;
     }
 `;
