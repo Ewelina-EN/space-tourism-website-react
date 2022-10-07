@@ -9,7 +9,7 @@ export const HomeArticle = styled.article`
     height: 720px;
     padding: 130px 0 50px 0;
     
-    @media (max-width: 767px) {
+    @media (max-width: 375px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25,7 +25,7 @@ export const TextSection = styled.section`
     padding-bottom: 50px;
     padding-left: 100px;
 
-    @media (max-width: 767px){
+    @media (max-width: 375px){
         width: 327px;
         padding: 0;
     }
@@ -38,7 +38,7 @@ export const SmallHeader = styled.p`
     line-height: 34px;
     letter-spacing: 4.725px;
 
-     @media (max-width: 767px){
+     @media (max-width: 375px){
         font-size: 16px;
         line-height: 19px;
         text-align: center;
@@ -56,7 +56,7 @@ export const BigHeader = styled.p`
     margin: 0;
     color: #FFFFFF;
 
-    @media (max-width: 767px){
+    @media (max-width: 375px){
         font-size: 80px;
         line-height: 100px;
         text-align: center;
@@ -69,7 +69,7 @@ export const Content = styled.p`
     font-size: 18px;
     line-height: 32px;
 
-    @media (max-width: 767px){
+    @media (max-width: 375px){
         font-size: 15px;
         line-height: 25px;
         text-align: center;
@@ -91,7 +91,7 @@ export const HomeButton = styled.button`
         backdrop-filter: blur(81.5485px);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 375px) {
         margin: 0;
 
         &:hover{
@@ -113,7 +113,7 @@ export const BtnSpan = styled.span`
     font-size: 32px;
     text-transform: uppercase;
 
-    @media (max-width: 767px) {
+    @media (max-width: 375px) {
         margin: 0;
         font-size: 20px;
         width: 150px;

@@ -8,7 +8,7 @@ export const ContainerCrew = styled.main`
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         background-image: url(${imgCrewMobile});
     }
 `;
@@ -23,7 +23,7 @@ export const Header = styled.div`
     letter-spacing: 4.725px;
     padding: 70px 0 0 150px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 2.7px;
@@ -46,7 +46,7 @@ export const Content = styled.article`
     padding: 70px 0 0;
     margin: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         display:none;
     }
 `;
@@ -54,7 +54,7 @@ export const Content = styled.article`
 export const SectionCrew = styled.div`
     margin: 50px 80px 0 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -70,7 +70,7 @@ export const Role = styled.p`
     color: #FFFFFF;
     opacity: 0.5;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         font-size: 16px;
         line-height: 18px;
         text-align: center;
@@ -86,7 +86,7 @@ export const Name = styled.p`
     color: #FFFFFF;
     margin: 13px 0 0 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         font-size: 24px;
         line-height: 28px;
         text-align: center;
@@ -101,7 +101,7 @@ export const Info = styled.p`
     width: 444px;
     margin: 29px 0 0 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         font-size: 15px;
         line-height: 25px;
         text-align: center;
@@ -114,7 +114,7 @@ export const Img = styled.img`
     display: inline-block;
     height: 600px;
     
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         height: 223px;
         margin-top: 32px;
         border-bottom: 2px solid #383B4B;
@@ -130,7 +130,7 @@ export const CrewNavigation = styled.nav`
     margin-top: 70px;
     padding: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         display:flex;
         align-items: center;
         justify-content: center;
@@ -146,7 +146,7 @@ export const MenuList = styled.ul`
     padding: 0;
     list-style: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         display: flex;
         align-items:center;
         justify-content: center;
@@ -161,7 +161,7 @@ export const Span = styled.span`
     height: 20px;
     background-color: #FFFFFF;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         margin: 0 10px;
         border-radius: 50%;
         width: 10px;
@@ -173,7 +173,7 @@ export const Span = styled.span`
 export const Mobile = styled.article`
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         height: 100%;
         display: block;
         padding-bottom: 104px;

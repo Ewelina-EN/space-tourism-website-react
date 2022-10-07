@@ -8,7 +8,7 @@ export const Container = styled.main`
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         background-image: url(${imgHomeMobile});
         background-position: bottom;
         background-repeat: no-repeat;

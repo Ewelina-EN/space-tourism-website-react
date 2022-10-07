@@ -8,7 +8,7 @@ export const DestinationContainer = styled.main`
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         background-image: url(${imgDestinationMobile});
         background-position: bottom;
         background-repeat: no-repeat;
@@ -24,7 +24,7 @@ export const Section = styled.article`
     justify-content: space-evenly;
     padding: 100px 0 70px 0;
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,7 +34,7 @@ export const Section = styled.article`
 `;
 
 export const Image = styled.img`
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         width: 170px;
         height: 170px;
         margin-bottom: 29px;
@@ -52,7 +52,7 @@ export const DestinationHeader = styled.div`
     padding: 70px 0 0 150px;
     
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         text-align: center;
         font-size: 16px;
         line-height: 19px;
@@ -67,7 +67,7 @@ export const HeaderSpan = styled.span`
     mix-blend-mode: normal;
     opacity: 0.25;
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         text-align: center;
         font-size: 16px;
         line-height: 19px;
@@ -78,7 +78,7 @@ export const HeaderSpan = styled.span`
 export const Planet = styled.section`
     width: 450px;
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         width: 375px;
         display: flex;
         flex-direction: column;
@@ -95,7 +95,7 @@ export const Title = styled.p`
     font-size: 100px;
     margin: 20px 0 0 0;
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         font-size:56px;
         line-height: 64px;
         text-align: center;
@@ -112,7 +112,7 @@ export const Info = styled.p`
     color: #D0D6F9;
     margin-bottom: 50px;
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         font-size: 15px;
         line-height:25px;
         text-align: center;
@@ -129,7 +129,7 @@ export const Data = styled.section`
     margin-top: 20px;
     border-top: 1px solid #383B4B;
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         display: flex;
         flex-direction: column; 
         border-top: 1px solid #383B4B;
@@ -141,7 +141,7 @@ export const DataInfo = styled.div`
     margin-top: 10px;
     padding-right: 79px;
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         margin: 32px 0 0 0;
         padding:0;
         text-align: center;   
@@ -183,7 +183,7 @@ export const DestinationNav = styled.nav`
     text-transform: uppercase;
     margin: 0;
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         justify-content: center;  
         font-size: 14px;
         line-height: 17px;
@@ -201,7 +201,7 @@ export const MenuList = styled.ul`
     justify-content: space-between;
     padding: 0;
   
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
         justify-content: space-around;
     }
 `;
@@ -211,7 +211,7 @@ export const Span = styled.span`
     color: #FFFFFF;
     padding: 0 0 10px 0;
 
-    @media(max-width: 768px) {
+    @media(max-width: 375px) {
     color: #D0D6F9;
     margin: 0 0 10px 0;
     padding: 0 0 10px 0;

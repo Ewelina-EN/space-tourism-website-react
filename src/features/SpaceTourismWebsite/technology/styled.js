@@ -8,7 +8,7 @@ export const TechContainer = styled.main`
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         background-image: url(${imgTechMobile});
         background-position: bottom;
         background-repeat: no-repeat;
@@ -17,7 +17,7 @@ export const TechContainer = styled.main`
 `;
 
 export const Image = styled.img`
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         height: 170px;
         width: 100%;
     }
@@ -33,7 +33,7 @@ export const Header = styled.div`
     letter-spacing: 4.725px;
     padding: 70px 0 0 150px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 2.7px;
@@ -59,7 +59,7 @@ export const Content = styled.article`
     padding: 70px 0 15px 70px;
     margin: 0;
 
-     @media (max-width: 768px) {
+     @media (max-width: 375px) {
         display:none;
      }
 `;
@@ -77,7 +77,7 @@ export const Info = styled.section`
     justify-content: center;
     margin: 0 0 0 40px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         display:flex;
         flex-direction: column;
         align-items:center;
@@ -96,7 +96,7 @@ export const Title = styled.p`
     text-transform: uppercase;
     margin-top: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         font-size: 14px;
         line-height: 17px;
         text-align: center;
@@ -112,7 +112,7 @@ export const Keyword = styled.p`
     text-transform: uppercase;
     margin: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         font-size: 24px;
         line-height: 28px;
         text-align: center;
@@ -126,7 +126,7 @@ export const Definition = styled.p`
     color: #D0D6F9;
     width: 444px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         font-size: 15px;
         line-height: 25px;
         text-align: center;
@@ -143,7 +143,7 @@ export const NavMenu = styled.div`
     font-family: 'Bellefair';
     font-size: 32px;
     
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         display:none;
     }
 `;
@@ -153,7 +153,7 @@ export const MenuList = styled.ul`
     padding: 0;
     margin: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         display:flex;
         flex-direction: row;
         align-items:center;
@@ -184,7 +184,7 @@ export const Span = styled.span`
         border: 1px #FFFFFF solid;
     } 
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         height:40px;
         width: 40px;
         margin: 34px 15px 0 0;
@@ -194,7 +194,7 @@ export const Span = styled.span`
 export const Mobile = styled.article`
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         display:flex;
         flex-direction: column;
         align-items: center;
