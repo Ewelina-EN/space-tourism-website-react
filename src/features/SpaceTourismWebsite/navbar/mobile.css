@@ -4,7 +4,17 @@
 
 .nav-menu.active {
     display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding: 0;
-    position: absolute;
+    width: 254px;
+    padding-left: 24px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding-top: 33px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    position:absolute;
+    z-index: 10;
 }

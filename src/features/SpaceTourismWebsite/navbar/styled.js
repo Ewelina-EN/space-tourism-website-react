@@ -15,15 +15,15 @@ export const Navigation = styled.div`
 `;
 
 export const NavMobile = styled.div`
-        display: none;
+    display: none;
         
-        @media (max-width: 667px) {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            padding: 24px 0 0 0;
-            margin: 0 24px;
+    @media (max-width: 667px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 0 0 0;
+        margin: 0 24px;
     }
 `;
 
@@ -50,7 +50,7 @@ export const Logo = styled.div`
 
 export const ImgLogo = styled.img`
     @media (max-width: 768px) {
-            display:inline;
+        display:inline;
     }
 `;
 
@@ -68,15 +68,6 @@ export const MenuMobile = styled.nav`
 
     @media (max-width: 768px) {
         display:flex;
-        align-items: flex-start;
-        padding: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-        padding-top: 33px;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(81.5485px);
     }
 `;
 
@@ -89,12 +80,7 @@ export const MenuList = styled.ul`
     width: 630px;
 
     @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 254px;
-        padding-left: 24px;
+        display: none;
     }
 `;
 
@@ -114,7 +100,6 @@ export const Span = styled.span`
         padding: 30px 0 5px 0;
         margin: 0;
     }
-
 `;
 
 export const List = styled.li`
