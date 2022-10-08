@@ -109,6 +109,7 @@ export const Planet = styled.section`
 
     @media(max-width: 768px) {
         width: 573px;
+        margin: 25px;
     }
 
     @media(max-width: 375px) {
@@ -158,7 +159,8 @@ export const Info = styled.p`
         text-align: center;
         width: 573px;
         height: 84px;
-        margin: 0 0 30px 0;
+    justify-content: center;
+        margin-bottom: 0;
     }
 
     @media(max-width: 375px) {
@@ -167,6 +169,7 @@ export const Info = styled.p`
         text-align: center;
         width: 327px;
         margin: 0;
+        height: 125px;
     }
 `;
 
@@ -179,7 +182,7 @@ export const Data = styled.section`
     border-top: 1px solid #383B4B;
 
     @media(max-width: 768px) {
-        justify-content: space-around;
+        justify-content: center;
         border-top: 1px solid #383B4B;
         width: 573px;
         margin: 20px 24px;
@@ -190,6 +193,7 @@ export const Data = styled.section`
         flex-direction: column; 
         border-top: 1px solid #383B4B;
         margin: 20px 24px;
+        width: auto;    
     }   
 `;
 
@@ -291,5 +295,21 @@ export const Span = styled.span`
     color: #D0D6F9;
     margin: 0 0 10px 0;
     padding: 0 0 10px 0;
+    }
+`;
+
+export const Tab = styled.div`
+    display: none;
+
+    @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media(max-width: 375px) {
+        display: none;
     }
 `;

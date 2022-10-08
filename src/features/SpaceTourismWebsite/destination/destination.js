@@ -13,7 +13,8 @@ import {
     DataInfo,
     DataP,
     DataSpan,
-    Image
+    Image,
+    Tab
 } from "./styled";
 
 export default function Destination() {
@@ -39,7 +40,7 @@ function Header() {
 
 function Content() {
     return (
-        <>
+        <Tab>
             <Navigation />
             <Planet>
                 <Title>Moon</Title>
@@ -57,6 +58,6 @@ function Content() {
                     <DataSpan className="">3 days</DataSpan>
                 </DataInfo>
             </Data>
-        </>
+        </Tab>
     )
 };
