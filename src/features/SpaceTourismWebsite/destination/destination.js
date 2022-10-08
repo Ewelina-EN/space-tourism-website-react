@@ -39,7 +39,7 @@ function Header() {
 
 function Content() {
     return (
-        <div>
+        <>
             <Navigation />
             <Planet>
                 <Title>Moon</Title>
@@ -57,6 +57,6 @@ function Content() {
                     <DataSpan className="">3 days</DataSpan>
                 </DataInfo>
             </Data>
-        </div>
+        </>
     )
 };

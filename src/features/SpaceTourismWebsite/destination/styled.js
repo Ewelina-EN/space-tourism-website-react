@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import imgDestinationDesktop from "./images/background-destination-desktop.jpg";
+import imgDestinationTablet from "./images/background-destination-tablet.jpg";
 import imgDestinationMobile from "./images/background-destination-mobile.jpg";
 
 export const DestinationContainer = styled.main`
@@ -7,6 +8,13 @@ export const DestinationContainer = styled.main`
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url(${imgDestinationTablet});
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     @media (max-width: 375px) {
         background-image: url(${imgDestinationMobile});
@@ -24,6 +32,14 @@ export const Section = styled.article`
     justify-content: space-evenly;
     padding: 100px 0 70px 0;
 
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 90px 0 40px 0;
+    }
+
     @media(max-width: 375px) {
         display: flex;
         flex-direction: column;
@@ -34,6 +50,13 @@ export const Section = styled.article`
 `;
 
 export const Image = styled.img`
+
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 53px;
+    }
+
     @media(max-width: 375px) {
         width: 170px;
         height: 170px;
@@ -51,6 +74,12 @@ export const DestinationHeader = styled.div`
     letter-spacing: 4.725px;
     padding: 70px 0 0 150px;
     
+    @media (max-width: 768px) {
+        padding: 40px 0 0 40px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
 
     @media(max-width: 375px) {
         text-align: center;
@@ -78,6 +107,10 @@ export const HeaderSpan = styled.span`
 export const Planet = styled.section`
     width: 450px;
 
+    @media(max-width: 768px) {
+        width: 573px;
+    }
+
     @media(max-width: 375px) {
         width: 375px;
         display: flex;
@@ -94,6 +127,13 @@ export const Title = styled.p`
     font-weight: 400;
     font-size: 100px;
     margin: 20px 0 0 0;
+
+    @media (max-width: 768px) {
+        font-size: 80px;
+        line-height: 92px;
+        text-align: center;
+        margin-top: 32px;
+    }
 
     @media(max-width: 375px) {
         font-size:56px;
@@ -112,9 +152,18 @@ export const Info = styled.p`
     color: #D0D6F9;
     margin-bottom: 50px;
 
+    @media(max-width: 768px) {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        width: 573px;
+        height: 84px;
+        margin: 0 0 30px 0;
+    }
+
     @media(max-width: 375px) {
         font-size: 15px;
-        line-height:25px;
+        line-height: 25px;
         text-align: center;
         width: 327px;
         margin: 0;
@@ -129,6 +178,13 @@ export const Data = styled.section`
     margin-top: 20px;
     border-top: 1px solid #383B4B;
 
+    @media(max-width: 768px) {
+        justify-content: space-around;
+        border-top: 1px solid #383B4B;
+        width: 573px;
+        margin: 20px 24px;
+    }   
+
     @media(max-width: 375px) {
         display: flex;
         flex-direction: column; 
@@ -140,6 +196,12 @@ export const Data = styled.section`
 export const DataInfo = styled.div`
     margin-top: 10px;
     padding-right: 79px;
+
+    @media(max-width: 768px) {
+        padding: 0;
+        margin: 10px;
+        text-align: center;
+    }   
 
     @media(max-width: 375px) {
         margin: 32px 0 0 0;
@@ -156,7 +218,7 @@ export const DataP = styled.p`
     line-height: 17px;
     letter-spacing: 2.3625px;
     text-transform: uppercase;
-    color: #D0D6F9;
+    color: #D0D6F9; 
 `;
 
 export const DataSpan = styled.span`
@@ -183,6 +245,16 @@ export const DestinationNav = styled.nav`
     text-transform: uppercase;
     margin: 0;
 
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
     @media(max-width: 375px) {
         justify-content: center;  
         font-size: 14px;
@@ -200,6 +272,10 @@ export const MenuList = styled.ul`
     align-items: flex-start;
     justify-content: space-between;
     padding: 0;
+
+    @media(max-width: 768px) {
+        justify-content: space-around;
+    }
   
     @media(max-width: 375px) {
         justify-content: space-around;
