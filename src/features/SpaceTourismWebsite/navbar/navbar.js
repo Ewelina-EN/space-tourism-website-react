@@ -8,6 +8,9 @@ import {
   Span,
   ImgCloseIcon,
   ImgBurgerIcon,
+  NavTab,
+  MenuTab,
+  ImgLogoTab,
   NavMobile,
   ImgLogo,
   MenuMobile
@@ -37,6 +40,18 @@ export default function Navbar() {
           </MenuList>
         </Menu>
       </Navigation>
+
+      <NavTab>
+        <ImgLogoTab src={logo} alt="" />
+        <MenuTab>
+          <MenuList className='navigation' id="menuList">
+            <CustomLink to="/" ><Span> HOME</Span></CustomLink>
+            <CustomLink to="/destination" ><Span> DESTINATION</Span></CustomLink>
+            <CustomLink to="/crew"><Span> CREW</Span></CustomLink>
+            <CustomLink to="/technology" ><Span> TECHNOLOGY</Span></CustomLink>
+          </MenuList>
+        </MenuTab>
+      </NavTab>
 
       <NavMobile >
         <ImgLogo src={logo} alt="" />
