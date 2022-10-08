@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import imgTechDesktop from "./images/background-technology-desktop.jpg";
+import imgTechTablet from "./images/background-technology-tablet.jpg";
 import imgTechMobile from "./images/background-technology-mobile.jpg";
 
 export const TechContainer = styled.main`
@@ -7,6 +8,13 @@ export const TechContainer = styled.main`
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url(${imgTechTablet});
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     @media (max-width: 375px) {
         background-image: url(${imgTechMobile});
@@ -17,6 +25,11 @@ export const TechContainer = styled.main`
 `;
 
 export const Image = styled.img`
+     @media (max-width: 768px) {
+        height: 310px;
+        width: 768px;
+    }
+
     @media (max-width: 375px) {
         height: 170px;
         width: 100%;
@@ -32,6 +45,13 @@ export const Header = styled.div`
     font-size: 28px;
     letter-spacing: 4.725px;
     padding: 70px 0 0 150px;
+
+    @media (max-width: 768px) {
+        padding: 40px 0 60px 40px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
 
     @media (max-width: 375px) {
         font-size: 16px;
@@ -59,6 +79,14 @@ export const Content = styled.article`
     padding: 70px 0 15px 70px;
     margin: 0;
 
+     @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+    }
+
      @media (max-width: 375px) {
         display:none;
      }
@@ -68,6 +96,12 @@ export const ContentBox = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+
+     @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 export const Info = styled.section`
@@ -76,6 +110,11 @@ export const Info = styled.section`
     align-items: flex-start;
     justify-content: center;
     margin: 0 0 0 40px;
+
+     @media (max-width: 768px) {
+        margin: 0;
+        align-items: center;
+    }
 
     @media (max-width: 375px) {
         display:flex;
@@ -96,6 +135,12 @@ export const Title = styled.p`
     text-transform: uppercase;
     margin-top: 0;
 
+     @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
     @media (max-width: 375px) {
         font-size: 14px;
         line-height: 17px;
@@ -112,6 +157,12 @@ export const Keyword = styled.p`
     text-transform: uppercase;
     margin: 0;
 
+     @media (max-width: 768px) {
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+    }
+
     @media (max-width: 375px) {
         font-size: 24px;
         line-height: 28px;
@@ -125,6 +176,13 @@ export const Definition = styled.p`
     line-height: 32px;
     color: #D0D6F9;
     width: 444px;
+
+     @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        padding-bottom: 100px;
+    }
 
     @media (max-width: 375px) {
         font-size: 15px;
@@ -143,6 +201,14 @@ export const NavMenu = styled.div`
     font-family: 'Bellefair';
     font-size: 32px;
     
+     @media (max-width: 768px) {
+       margin:0;
+       font-size:24px;
+       line-height: 28px;
+       text-align: center;
+       letter-spacing: 1.5px;
+    }
+
     @media (max-width: 375px) {
         display:none;
     }
@@ -152,6 +218,15 @@ export const MenuList = styled.ul`
     list-style: none;
     padding: 0;
     margin: 0;
+
+     @media (max-width: 768px) {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        width: 210px;
+        margin-top: 56px;
+    }
 
     @media (max-width: 375px) {
         display:flex;
@@ -183,6 +258,11 @@ export const Span = styled.span`
     &:hover{
         border: 1px #FFFFFF solid;
     } 
+
+     @media (max-width: 768px) {
+        width: 58px;
+        height: 58px;
+    }
 
     @media (max-width: 375px) {
         height:40px;
