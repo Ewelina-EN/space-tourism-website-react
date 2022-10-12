@@ -299,7 +299,6 @@ export const Span = styled.span`
 `;
 
 export const Tab = styled.div`
-    display: none;
 
     @media(max-width: 768px) {
         display: flex;
