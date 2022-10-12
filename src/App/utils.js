@@ -1,5 +1,9 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
+const linkStyle = {
+    textDecoration: "none",
+}
+
 export default function CustomLink({ to, children, ...props }) {
     // console.log("to", to);
     // console.log("children", to, children);
@@ -12,7 +16,7 @@ export default function CustomLink({ to, children, ...props }) {
 
     return (
         <li className={isActive ? "active" : ""}>
-            <Link to={to} {...props}>{children}</Link>
+            <Link to={to} {...props} style={linkStyle}>{children}</Link>
         </li>
     )
 };
