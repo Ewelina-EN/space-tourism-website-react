@@ -221,26 +221,23 @@ export const MenuList = styled.ul`
 `;
 
 export const Span = styled.span`    
-    display: inline-block;
+    display: flex;
     margin-right: 25px;
     border-radius: 50%;
     width: 20px;
     height: 20px;
     background-color: #FFFFFF;
+    opacity: 0.17;
 
     @media (max-width: 768px) {
         width: 10px;
         height: 10px;
-        margin-right: 16px;
-        background-color: #FFFFFF;
+        /* margin-right: 16px; */
     }
 
     @media (max-width: 375px) {
-        margin: 0 10px;
-        border-radius: 50%;
         width: 10px;
         height: 10px;
-        background-color: #FFFFFF;
     }
 `;
 

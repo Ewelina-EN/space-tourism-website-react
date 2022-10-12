@@ -292,9 +292,9 @@ export const Span = styled.span`
     padding: 0 0 10px 0;
 
     @media(max-width: 375px) {
-    color: #D0D6F9;
-    margin: 0 0 10px 0;
-    padding: 0 0 10px 0;
+        color: #D0D6F9;
+        margin: 0 0 10px 0;
+        padding: 0 0 10px 0;
     }
 `;
 

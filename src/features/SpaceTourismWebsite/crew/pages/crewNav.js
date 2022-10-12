@@ -7,9 +7,9 @@ import {
 
 export default function CrewNav() {
     return (
-        <CrewNavigation className="crew">
-            <MenuList >
-                <CustomLink to="/crew"><Span></Span></CustomLink>
+        <CrewNavigation >
+            <MenuList className="crew" >
+                <CustomLink to="/crew"><Span ></Span></CustomLink>
                 <CustomLink to="/crew/specialist"><Span></Span></CustomLink>
                 <CustomLink to="/crew/pilot"><Span></Span></CustomLink>
                 <CustomLink to="/crew/engineer"><Span></Span></CustomLink>

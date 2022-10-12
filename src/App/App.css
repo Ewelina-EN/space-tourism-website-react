@@ -1,19 +1,40 @@
-.navigation li.active{
-    border-bottom: 3px #fff solid;
+.navigation li.active {
+  border-bottom: 3px #fff solid;
 }
 
-.navigation a{
-    text-decoration: none;
+.navigation a {
+  text-decoration: none;
 }
 
-.navigation li:hover{
-    border-bottom: 3px #8A8B90 solid;
+.navigation li:hover {
+  border-bottom: 3px #8a8b90 solid;
 }
 
-/* .crew .active{
-    background-color: #fff;
+.crew li {
+  margin-right: 25px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
-.crew :hover{
-    background-color: #ffffff7d;
-} */
+.crew li.active {
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .crew li {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .crew li {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.crew li:hover {
+  background-color: #ffffff7d;
+}
