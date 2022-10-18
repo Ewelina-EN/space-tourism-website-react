@@ -21,7 +21,7 @@ import './mobile.css';
 import { useState } from 'react';
 
 export default function Navbar() {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 

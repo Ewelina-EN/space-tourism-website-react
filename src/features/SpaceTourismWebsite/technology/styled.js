@@ -249,7 +249,7 @@ export const Span = styled.span`
     justify-content: center;
     color: #FFFFFF;
 
-    &:active{
+    &:active, .active &{
         border: 1px #FFFFFF solid;
         background-color: #FFFFFF;
         color: #0B0D17;
